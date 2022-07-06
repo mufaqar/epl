@@ -42,7 +42,7 @@
                                 <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta"></a>
                             </div>
                            <div class="content-1">
-                               <p>Studio enquires</p>
+                               <p>Studio enquires Footer </p>
                                <a href="mailto:info@exhalepilateslondon.com">info@exhalepilateslondon.com</a>
                            </div>
                            <div class="content-2">
