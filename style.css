@@ -149,6 +149,7 @@ height:auto !important}
     font-family: "Gotham Book", Sans-serif;
     font-size: 25px;
     font-weight: 300;
+    text-transform: lowercase;
 }
 
 .instagram-feed>.container .padding>.text-center>a>img{
@@ -270,7 +271,9 @@ div.healcode a.action_icon img {
 	padding:10px;
 }
 
-.exhale-pilates .para {    max-width: 560px;}
+.exhale-pilates .para {    width: 85%;}
+.exhale-pilates .time-class { text-align: center;}
+.exhale-pilates .time-class .btn-buy { margin-left: 7%;}
 
 .team-wrapper{
 	position:relative;
@@ -297,3 +300,17 @@ div.healcode a.action_icon img {
 
   div.faqscat:nth-child(2n) .graySec { background-color: #FFF !important;}
   div.faqscat:nth-child(3n) .graySec { background-color: #00AEC7 !important;}
+
+  .fixed-footer { position: fixed; bottom: 0px;    width: 100%; z-index: 9999;}
+  .our-classes .padding {
+    padding: 15px;
+}
+
+.videosection .overlay { background-color: none;}
+
+.sbi_item { padding: 15px !important;} 
+
+.our-classes .padding .hover-img {
+    max-width: 340px;
+    margin-bottom: 20px;
+}

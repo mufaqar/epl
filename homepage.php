@@ -28,12 +28,13 @@ $workshops = get_field('our_workshops');
                 <div class="padding">
                     <div class="para">
                         <p><?php echo get_post_meta(get_the_ID(), 'short_instructions',  true); ?></p>
-                    </div>
-                    <div class="time-class">
+                        <div class="time-class">
                         <button class="btn btn-buy"><a href="<?php the_field('more_info_link') ?>">MORE INFO</a></button>
                     </div>
+                    </div>                    
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
@@ -157,11 +158,12 @@ $workshops = get_field('our_workshops');
         <div class="padding">
             <div class="text-center">           
             <a href="https://instagram.com/exhalepilateslondon" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta" > <h2>@exhalepilateslondon</h2></a>
-                <div class="padding">
-                     <?php echo do_shortcode('[instagram-feed feed=3]')?>
-                </div>
+                
              </div>
         </div>
+        <div class="instagram_feeds">
+                     <?php echo do_shortcode('[instagram-feed feed=3]')?>
+                </div>
      </div>
 
 

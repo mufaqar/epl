@@ -79,6 +79,22 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/custom.js"></script>
+
+    <script>
+
+        
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('.class-instructor').addClass('fixed-footer');
+    }
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+        
+        $('.class-instructor').removeClass('fixed-footer');
+    }
+});
+
+
+    </script>
 	
 
 </body>
