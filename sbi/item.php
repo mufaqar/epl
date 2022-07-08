@@ -130,14 +130,8 @@ $posted_on_date_str = apply_filters( 'sbi_posted_on_date', $posted_on_date_str, 
                 <span class="sbi-screenreader"><?php _e( 'Open', 'instagram-feed' ); ?></span>
 				<?php echo $maybe_video_icon; ?>
             </a>
-        </div>
 
-        <a class="sbi_photo" href="<?php echo esc_url( $permalink ); ?>" target="_blank" rel="nofollow noopener" data-full-res="<?php echo esc_url( $media_full_res ); ?>" data-img-src-set="<?php echo esc_attr( sbi_json_encode( $media_all_sizes_json ) ); ?>"<?php echo $sbi_photo_style_element; ?>>
-            <img src="<?php echo esc_url( $media_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
-        </a>
-    </div>
-
-    <div class="sbi_info">
+            <div class="sbi_info">
 
         <?php if ( sbi_doing_customizer( $settings ) || SB_Instagram_Display_Elements_Pro::should_show_element( 'caption', $settings ) ) : ?>
         <p class="sbi_caption_wrap" <?php echo SB_Instagram_Display_Elements_Pro::get_caption_data_attributes( $settings, $caption, $post_id ); ?>>
@@ -156,6 +150,14 @@ $posted_on_date_str = apply_filters( 'sbi_posted_on_date', $posted_on_date_str, 
         </div>
 	    <?php endif; ?>
 
-    </div>
+    </div> 
+        </div>
+
+        <a class="sbi_photo" href="<?php echo esc_url( $permalink ); ?>" target="_blank" rel="nofollow noopener" data-full-res="<?php echo esc_url( $media_full_res ); ?>" data-img-src-set="<?php echo esc_attr( sbi_json_encode( $media_all_sizes_json ) ); ?>"<?php echo $sbi_photo_style_element; ?>>
+            <img src="<?php echo esc_url( $media_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
+        </a>
+  
+
+     </div>
 
 </div>

@@ -12,7 +12,7 @@
         $author_linkedin = $data['author_linkedin']; 
    */
 	?>
-
+    <div class="spacer" style="margin-botom:127px; min-height:127px"> </div>
 
 <div class="class-instructor">
         <div class="class">
@@ -26,10 +26,6 @@
             </div>
         </div>
     </div> 
-
-
-
-
     <div class="footer-banner">
         <div class="container">
             <div class="row">
@@ -87,9 +83,9 @@ $(window).scroll(function(){
     if ($(window).scrollTop() >= 300) {
         $('.class-instructor').addClass('fixed-footer');
     }
-    if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-        
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 300) {        
         $('.class-instructor').removeClass('fixed-footer');
+        $('.class-instructor').css("margin-top", "-127px");
     }
 });
 

@@ -37,8 +37,48 @@ $address = get_field('address');
       <div class="container">
         <div class="find-us">
           <div class="padding">
-            <div class="text-center">
-              <h2>FIND US</h2>
+            <div class="text-left">
+              <h2>PRIMROSE HILL</h2>
+            </div>
+          </div>
+        </div>
+        <div class="address-map">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="padding">
+                <div class="heading">
+                  <h3>Address</h3>
+                  <p><?php echo $address['address']; ?></p>
+                  
+                </div>
+                <div class="heading mt-4">
+                  <h3>NEAREST TUBE</h3>
+                  <p><?php echo $address['nearest_tube']; ?></p>
+                </div>
+                <div class="heading mt-4">
+                  <h3>CONTACT</h3>
+                  <p><a href="tel:+44 (0)207 186 0611"><?php echo $address['contact']; ?></a></p>
+                  <p><a href="mailto:info@exhalepilateslondon.com"><?php echo $address['mail']; ?></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="padding" style="width:420px;height:420px;">
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDb1srLKF_h7m9FvC97AgtFoQWc3aaAKHM"></script>                
+                  <div id="map_canvas" class="map" style="width:420px; height:420px;"> </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="address">
+      <div class="container">
+        <div class="find-us">
+          <div class="padding">
+            <div class="text-left">
+              <h2>NORTH FINCHLEY</h2>
             </div>
           </div>
         </div>
