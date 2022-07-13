@@ -27,7 +27,7 @@ $banner_type = get_field('banner_type');
         <!-- The header content -->
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
-            <div class="w-100 text-white">
+            <div class="w-100 text-white banner-content">
 				<?php if ($banner_title != '') { ?>  <h1><?php echo $banner_title; ?> </h1>  <?php }  ?>			
 				<?php if ($banner_sub_title != '') { ?>  <p><?php echo $banner_sub_title; ?></p>   <?php }  ?>
                 <div class="banner-btn">

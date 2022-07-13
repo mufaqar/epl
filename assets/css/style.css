@@ -264,13 +264,13 @@ button {
 }
 .main-banner .banner-content .banner-btn .btn-border {
   font-family: "Gilory Light", Sans-serif;
-  font-size: 14.49px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   background-color: rgba(97, 206, 112, 0);
   border: 1px solid #fff;
   border-width: 1px 1px 1px 1px;
-  padding: 7px 35px;
+  padding: 7px 40px;
   border-radius: 0px;
   color: #fff;
   text-align: center;

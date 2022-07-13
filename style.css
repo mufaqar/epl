@@ -3,7 +3,7 @@ Theme Name: EPL theme
 Theme URI: http://mufaqar.com
 Author URI: https://mufaqar.com
 Description: Description
-Version: 1.0.3
+Version: 1.1.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: epl-theme
@@ -116,9 +116,12 @@ height:auto !important}
     }
     .banner-btn .btn{
         border: 1px solid #00AEC7;
-        padding: 7px 18px;
+        padding: 7px 24px !important;
         cursor: pointer;
         color: #00AEC7;
+        font-size: 20px !important;
+        font-family: "Brandon Grotesque Black", Sans-serif;
+        
     }
 
     a{ cursor: pointer;}
@@ -164,13 +167,14 @@ height:auto !important;
 .class-detail-1 p{
 	 max-width: 550px !important;
 }
-.class-detail-2 .clr>div {
+.class-detail-2 .clr>div , .single_class .clr>div {
 	 max-width: 500px !important;
 }
 .class-detail-2 .clr p{
 	max-width:100% !important;
 	margin-bottom:10px;
 }
+
 
 .bw-widget--large .bw-session__basics .bw-widget__cart_button {
     min-width: 125px;
@@ -314,3 +318,56 @@ div.healcode a.action_icon img {
     max-width: 340px;
     margin-bottom: 20px;
 }
+
+
+.videosection .banner-content h1 {
+    color: #FFFFFF;
+    font-family: "Brandon Grotesque Black", Sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+}
+
+.banner-btn a:hover  { background: #00aec7; color:#fff;}
+
+.single_class p  , .single_class ul li  { 
+    color: #53565a;
+    font-family: "Gotham Book", Sans-serif;
+    font-size: 15.15px; }
+
+.single_class ul li { list-style: auto; text-align: left; }
+
+.arrow_btn { text-align: center; cursor: pointer}
+.address .find-us {
+    padding: 3% 0% 0% 0%;
+}
+
+.btn-team {
+    font-family: "Gotham Book", Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase; 
+    color: #53565A;
+    border-radius: 0px;
+    border: 1px solid  #53565A;
+
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 3% 3% 3% 3%;
+    width: 220px;
+   
+}
+.btn-team:hover {
+
+    background-color: #00AEC7;
+    color: #fff;
+    border: 1px solid  #53565A;
+
+
+}
+
+.pagebody ul , .pagebody ol { list-style: circle  !important; margin-left: 30px;}
+
+.pricing-section .pricing-cards .card-padding .card-1 .btn-buy {
+    margin-top: 20px;
+}
+

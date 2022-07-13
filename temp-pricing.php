@@ -37,7 +37,7 @@ get_header();
            </div>
            <div class="new-offer">
                <div class="title">
-                   <h1>NEW MEMBER OFFERS</h1>
+                   <h1><?php the_field('pricing_table_heading'); ?></h1>
                </div>
                <div class="pricing-cards">
                    <div class="row"> 

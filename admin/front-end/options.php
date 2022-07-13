@@ -40,7 +40,7 @@
     	</div>
 
 		<div id="info_bar">
-				<div class="expand"><span style="font-weight:700">Hello <?php global $current_user; get_currentuserinfo(); echo $current_user->display_name ; ?></span>! Good Day :)</div>
+				<div class="expand"><span style="font-weight:700">Hello <?php global $current_user; get_currentuserinfo(); echo $current_user->display_name ; ?></span>!</div>
 			<button id="of_save" type="button" class="button-primary-smof save-all-changes-button">
 				<?php _e('Save All Changes','author_ts');?>
 			</button>

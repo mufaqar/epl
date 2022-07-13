@@ -43,49 +43,40 @@ $tp = get_template_directory_uri();
 
 
 <?php if( have_rows('classes_feature') ): ?>
-    <?php  while( have_rows('classes_feature') ): the_row();  ?>
-        <?php  $me = 0; if( get_row_layout() == 'with_blue_background' ):  ?>          
-          <div class="class-detail-2">
+    <?php  while( have_rows('classes_feature') ): the_row();   $index = get_row_index(); ?>
+        <?php if( get_row_layout() == 'with_blue_background' ):  ?>          
+          <div class="class-detail-2 single_class">
             <div class="row g-0">
               <div class="col-md-6 clr">
               <div class="padding">
-              <h1><?php  the_sub_field('title'); ?></h1>   
-              <?php echo $me ?>             
+              <h1><?php  the_sub_field('title'); ?></h1>                      
               <?php get_template_part('template-parts/shortlong')?>
               </div>
               </div>
               <div class="col-md-6">
                 <div class="side-img">              
-                  <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="_card_img<?php echo $count_blue ?>">
+                  <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
                 </div>
               </div>
             </div>
           </div>
           
-        <?php  $me++;  $wh = 0; elseif( get_row_layout() == 'with_white_background' ):  
-            $image = get_sub_field('image');
-            ?>
-           <div class="class-detail-3">
+        <?php  elseif( get_row_layout() == 'with_white_background' ): $image = get_sub_field('image');?>
+           <div class="class-detail-3 single_class">
                   <div class="row g-0">
                     <div class="col-md-6">
                       <div class="side-img">
-                        <img src="<?php  the_sub_field('image'); ?>" alt="trainer">
+                      <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
                       </div>
                     </div>
                     <div class="col-md-6 clr">
                     <div class="padding">
-                    <h1><?php  the_sub_field('title'); ?></h1>
-                    <?php echo $wh ?>      
+                    <h1><?php  the_sub_field('title'); ?></h1>                     
                     <?php get_template_part('template-parts/shortlong')?>
-
-                    
-
-
-
                     </div>
                   </div>
             </div>
-        <?php $wh++; endif; ?>
+        <?php  endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
@@ -132,23 +123,9 @@ $tp = get_template_directory_uri();
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<script>
-    $(".longcontent").hide();
-    $("#showlong").click(function(){
-      $(".longcontent" ).show();
-      $(".shortcontent").hide();   
-      $(".side-img img").css("height","100%");
-    });
-    $("#showshort").click(function(){
-      $(".longcontent").hide();
-      $(".shortcontent").show();
-      $(".side-img img").css("height","360px");
-    });
 
 
-</script>
+
 
 <?php
 get_footer();

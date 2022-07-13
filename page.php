@@ -19,7 +19,7 @@ get_header();
 
 	<div class="page-sections pt-5 pb-5">
            <div class="container">           
-                <div class="row">
+                <div class="row pagebody">
 
 						<?php
 						while ( have_posts() ) : the_post();

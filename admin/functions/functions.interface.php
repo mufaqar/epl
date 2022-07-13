@@ -55,14 +55,11 @@ function optionsframework_admin_init()
  */
 function optionsframework_add_admin() {
 	
-       $of_page = add_theme_page( THEMENAME, 'Theme Options', 'edit_theme_options', 'optionsframework', 'optionsframework_options_page');
-	
-	//add_submenu_page( 	'optionsframework',	'Author Theme', 'Author Theme','edit_files','optionsframework','optionsframework_options_page','dashicons-admin-tools', 81); 
-//	add_submenu_page( 'optionsframework', 'Documentation', 'Theme Documentation', 'manage_options', 'documentations', 'documentations_callback' ); 
+      $of_page = add_theme_page( THEMENAME, 'Theme Options', 'edit_theme_options', 'optionsframework', 'optionsframework_options_page');
 
 	// Add framework functionaily to the head individually
-	add_action("admin_print_scripts-$of_page", 'of_load_only'); 
-	add_action("admin_print_styles-$of_page",'of_style_only'); 
+	add_action("admin_print_scripts-$of_page", 'of_load_only');
+	add_action("admin_print_styles-$of_page",'of_style_only');
 	
 }
 

@@ -34,11 +34,7 @@ input, button, a {
 }
 #of_container #header .logo {
 	float: left;
-	background-image: url(../images/white-logo.png);
-	background-repeat: no-repeat;
-	background-position: left center;
 	width: 100%;
-	height:40px;
 }
 #of_container #js-warning {
 	color: red;

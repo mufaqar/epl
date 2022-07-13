@@ -25,123 +25,43 @@ $count_white = 0;
 <?php get_template_part('template-parts/banner')?>
 
 
-<div class="class-detail-1">
-  <div class="container">
-
-  <?php
-						while ( have_posts() ) : the_post();
-							?>
-
-    
-<div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="padding">
-          <?php if (has_post_thumbnail()) { ?>
-            <?php the_post_thumbnail('full'); ?>
-          <?php } ?>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="padding">
-          <p><?php the_content(); ?></p>        
-        </div>
-      </div>
-    <?php 
-        endwhile; // End of the loop.
-        ?> 
-    </div>
-  </div>
-</div>
-
-
 
 
 <?php if( have_rows('teacher_traning_child') ): ?>
-    <?php while( have_rows('teacher_traning_child') ): the_row(); ?>
-        <?php if( get_row_layout() == 'with_blue_background' ): ?>
-          
-
-          
-          <div class="class-detail-2">
+    <?php  while( have_rows('teacher_traning_child') ): the_row();   $index = get_row_index(); ?>
+        <?php if( get_row_layout() == 'with_blue_background' ):  ?>          
+          <div class="class-detail-2 single_class">
             <div class="row g-0">
               <div class="col-md-6 clr">
-              <div class="padding pt-pb">
-                <h1><?php  the_sub_field('title'); ?></h1>
-                
-                  <?php 
-                    $count_blue++;
-                    $shortinfo = get_sub_field('short_info');
-                    $datalength= strlen($shortinfo);
-                    if($datalength > 230){ ?>
-                        <p class="short_info_more_content<?php echo $count_blue ?> _maxheigh">
-                          <?php the_sub_field('short_info'); ?>
-                        </p>
-                    <?php    
-                    }else{ ?>
-                        <p class="short_info_less_content _maxheigh">
-                            <?php the_sub_field('short_info'); ?>
-                        </p>
-                    <?php  
-                    }
-
-                  ?>
-                </p>
-                <?php  if($datalength > 230){ ?>
-                  <img src="<?php bloginfo('template_directory'); ?>/assets/img/arrow-down.svg" class="_arrow _arrowdown<?php echo $count_blue ?>" alt="arrow-down" onclick="handleHideShowContent_Blue(<?php echo $count_blue ?>);">
-                <?php } ?>
-                
+              <div class="padding">
+              <h1><?php  the_sub_field('title'); ?></h1>                      
+              <?php get_template_part('template-parts/shortlong')?>
               </div>
               </div>
               <div class="col-md-6">
-                <div class="side-img" style="height: 100%;">
-                  <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="_card_img<?php echo $count_blue ?>">
+                <div class="side-img">              
+                  <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
                 </div>
               </div>
             </div>
           </div>
           
-        <?php elseif( get_row_layout() == 'with_white_background' ): 
-            $image = get_sub_field('image');
-            $count_white++;
-            ?>
-           <div class="class-detail-3">
+        <?php  elseif( get_row_layout() == 'with_white_background' ): $image = get_sub_field('image');?>
+           <div class="class-detail-3 single_class">
                   <div class="row g-0">
                     <div class="col-md-6">
-                      <div class="side-img" style="height: 100%;">
-                        <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="w_card_img<?php echo $count_white ?>">
+                      <div class="side-img">
+                      <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
                       </div>
                     </div>
                     <div class="col-md-6 clr">
-                    <div class="padding pt-pb">
-
-                    <h1><?php  the_sub_field('title'); ?></h1>
-
-                    <?php 
-                      
-                
-                      $shortinfo = get_sub_field('short_info');
-                      $datalength= strlen($shortinfo);
-                      if($datalength > 230){ ?>
-                          <p class="short_info_more_content_w<?php echo $count_white ?> _maxheigh">
-                            <?php the_sub_field('short_info'); ?>
-                          </p>
-                      <?php    
-                      }else{ ?>
-                          <p class="short_info_less_content _maxheigh">
-                              <?php the_sub_field('short_info'); ?>
-                          </p>
-                      <?php  
-                      }
-
-                    ?>
-                    <?php  if($datalength > 230){ ?>
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/arrow-down.svg" class="_arrow _arrowdownwhite<?php echo $count_white ?>" alt="arrow-down" onclick="handleHideShowContent_White(<?php echo $count_white ?>)">
-                      <?php } ?>
-                  </div>
+                    <div class="padding">
+                    <h1><?php  the_sub_field('title'); ?></h1>                     
+                    <?php get_template_part('template-parts/shortlong')?>
                     </div>
                   </div>
             </div>
-        <?php endif; ?>
+        <?php  endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
@@ -167,7 +87,6 @@ $count_white = 0;
 
 
 <?php get_template_part('template-parts/testimonial')?>
-
 
 
 
@@ -208,23 +127,6 @@ $count_white = 0;
   }
 </style>
 
-<script>
-  function handleHideShowContent_Blue(count){
-    var arrowDown = document.querySelector('._arrowdown'.concat(count));
-    var content = document.querySelector('.short_info_more_content'.concat(count));
-    var img = document.querySelector('._card_img'.concat(count));
-    content.style.maxHeight = "100%";
-    img.style.height = "100%";
-  }
-
-  function handleHideShowContent_White(count){
-    var arrowDown = document.querySelector('._arrowdownwhite'.concat(count));
-    var content = document.querySelector('.short_info_more_content_w'.concat(count));
-    var img = document.querySelector('.w_card_img'.concat(count));
-    content.style.maxHeight = "100%";
-    img.style.height = "100%";
-  }
-</script>
 
 <?php
 
