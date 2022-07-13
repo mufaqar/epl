@@ -1,16 +1,7 @@
-<?php
-/*
- 
+    <?php
 
-		global $data;
+    $footer_bg = get_field('footer_setting', 'option'); 
 
-		$form_shortcode = $data['form_shortcode'];
-		$contact_info = $data['contact_info'];
-		$author_facebook = $data['author_facebook']; 
-        $author_twitter = $data['author_twitter']; 
-        $author_pin = $data['author_pin']; 
-        $author_linkedin = $data['author_linkedin']; 
-   */
 	?>
     <div class="spacer" style="margin-botom:127px; min-height:127px"> </div>
 
@@ -26,16 +17,16 @@
             </div>
         </div>
     </div> 
-    <div class="footer-banner">
+    <div class="footer-banner" style="background-image: url('<?php echo $footer_bg; ?>');">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="padding">
                         <div class="footer-content">
                             <div class="social-icon">
-                                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.png
+                                <a href="<?php the_field('facebook_link', 'option'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.png
                                 " alt="facebook"></a>
-                                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta"></a>
+                                <a href="<?php the_field('instagram', 'option'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta"></a>
                             </div>
                            <div class="content-1">
                                <p>Studio enquires Footer </p>

@@ -62,7 +62,7 @@
                     </div>
                   </nav>
                   <div class="number mbl-none">
-                    <a href="tel:+44 (0)207 186 0611">+44 (0)207 186 0611</a>
+                    <a href="tel:<?php the_field('tel_info_top', 'option'); ?>"><?php the_field('tel_info_top', 'option'); ?></a>
                   </div>
                </div>
             </div>
@@ -73,7 +73,7 @@
             </div>
             <div class="col-md-4 mbl-none">
                 <div class="sign-up mbl-none">
-                    <button class="btn btn-primary"><script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript"></script><healcode-widget data-version="0.2" data-link-class="loginRegister" data-site-id="9898" data-mb-site-id="184303" data-bw-identity-site="false" data-type="account-link" data-inner-html="Login | Register"  /></button>
+                    <button class="btn btn-primary"><?php the_field('login__sign_up', 'option'); ?></button>
                 </div>
             </div>
         </div>

@@ -371,3 +371,9 @@ div.healcode a.action_icon img {
     margin-top: 20px;
 }
 
+.member a:hover {
+    background-color: #00AEC7;
+    color: #fff;
+
+}
+
