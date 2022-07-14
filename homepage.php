@@ -121,7 +121,17 @@ $workshops = get_field('our_workshops');
                 'posts_per_page' => 9,
                 'order' => 'desc',
             ));
-            if (have_posts()) :  while (have_posts()) : the_post(); ?>
+            if (have_posts()) :  while (have_posts()) : the_post();
+
+            $custom_link = get_field('custom_link');
+           
+
+        
+
+            
+            
+            
+            ?>
                     <div class="col-md-4">
                         <div class="padding">
 
@@ -131,8 +141,8 @@ $workshops = get_field('our_workshops');
                                 } else { ?>
                                     <img src="<?php bloginfo('template_directory'); ?>/assets/img/inductions.jpg" alt="Featured Thumbnail" />
                                 <?php } ?>
-                                <h5> <a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
-                                <a href="<?php the_permalink() ?>">
+                                <h5> <a href="<?php if($custom_link == '') { the_permalink(); } else { echo $custom_link; } ?>"><?php the_title() ?></a></h5>
+                                <a href="<?php if($custom_link == '') { the_permalink(); } else { echo $custom_link; } ?>">
                                     <div class="content">
                                         <?php the_content() ?>
                                     </div>

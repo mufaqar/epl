@@ -82,7 +82,7 @@ get_header();
                           
 
 
-                                <div class="row">
+                       
                                         <?php      
                                     
                                                         query_posts(array(
@@ -111,7 +111,7 @@ get_header();
                                                     <h2><?php _e('Nothing Found','lbt_translate'); ?></h2>
                                         <?php endif;   ?>         
                                     
-                                    </div>
+                                   
                <?php  }  ?>
                
 

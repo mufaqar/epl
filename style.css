@@ -379,3 +379,10 @@ div.healcode a.action_icon img {
 
 .pricing-section .new-offer .title h1 { padding: 2% 0 1% 0% !important;}
 
+.extra_padding { padding: 0 5%;}
+
+.pricing-cards .row .col-md-4:nth-child(3) {
+  
+
+  }
+
