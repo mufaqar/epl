@@ -27,7 +27,7 @@ get_header();
             <div class="searchBoxMain">
                  <form action="" method="GET">
                         <select name="pricing" id="pricing" onchange="this.form.submit()"> 
-                        <option value="">All</option>                       
+                        <option value="">ALL</option>                       
                         <?php   
                             $types_tax = get_terms( array('taxonomy' => 'pricing_types','hide_empty' => false ) ); 
                             foreach( $types_tax as $type )  {
@@ -45,7 +45,8 @@ get_header();
            </div>
            <div class="new-offer">
                <div class="title">
-                   <h1><?php if($query == '') { echo "All";} 
+                   <h1><?php if($query == '') { //echo "All";
+                   } 
                    else {
                                     $terms_name = get_term_by('slug',$query, 'pricing_types'); 
 

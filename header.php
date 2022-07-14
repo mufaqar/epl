@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
+
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     
 	
 	<?php wp_head(); ?>
