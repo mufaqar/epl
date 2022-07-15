@@ -31,6 +31,16 @@
           <div class="padding">
             <div class="text-left">
               <h2><?php echo $title ?></h2>
+
+
+             
+              
+
+
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAewMb9ujqjtaC-OO1JmtKzSFb6j1n2_Uc&callback=myMap"></script>
+
+              <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyAewMb9ujqjtaC-OO1JmtKzSFb6j1n2_Uc&map_id=YOUR_MAP_ID&signature=YOUR_SIGNATURE" />
+
             </div>
           </div>
         </div>
