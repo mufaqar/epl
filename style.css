@@ -380,6 +380,18 @@ div.faqscat:nth-child(3n) .graySec {
 .page-template-appoinment-schedule .container .header { position: relative !important;}
 .header .navbar .top-menu { z-index: 999999;}
 
+.training-section .training-cards .card-padding .card-1 .btn-buy a:hover{
+    background-color: #FFF;
+    color: #00AEC7;
+    border: 1px solid #FFF;
+
+
+}
+.upcoming-course button a:hover {background-color: #FFF;
+    color: #00AEC7;
+    border: 1px solid #FFF;
+}
+
 
 .primary-btn {text-align: center; padding: 4% 0 0 0;}
 
@@ -390,7 +402,7 @@ div.faqscat:nth-child(3n) .graySec {
     text-transform: uppercase;
     background-color: #00AEC7;
     border: 1px solid #00AEC7;
-    padding: 1% 5% 1% 4%;
+    padding: 12px 32px;
     border-radius: 0px;
     color: #fff;
     text-align: center;
