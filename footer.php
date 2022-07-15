@@ -2,18 +2,28 @@
 
     $footer_bg = get_field('footer_setting', 'option'); 
 
+    $join_a_class_text = get_field('join_a_class_text', 'option'); 
+    $join_a_class_link = get_field('join_a_class_link', 'option'); 
+    $become_an_instructor_text = get_field('become_an_instructor_text', 'option'); 
+    $become_an_instructor_link = get_field('become_an_instructor_link', 'option'); 
+
+    
+    
+    
+    
+
 	?>
     <div class="spacer" style="margin-botom:127px; min-height:127px"> </div>
 
 <div class="class-instructor">
         <div class="class">
             <div class="padding">
-                <a href="<?php echo home_url('/class-schedule'); ?>">JOIN A CLASS</a>
+                <a href="<?php echo $join_a_class_link; ?>"><?php echo $join_a_class_text ?></a>
             </div>
         </div>
         <div class="instructor">
             <div class="padding">
-                <a href="<?php echo home_url('/class-schedule'); ?>">BECOME AN INSTRUCTOR</a>
+                <a href="<?php echo $become_an_instructor_link; ?>"><?php echo $become_an_instructor_text; ?></a>
             </div>
         </div>
     </div> 

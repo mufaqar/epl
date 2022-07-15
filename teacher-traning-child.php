@@ -15,6 +15,7 @@
 get_header();
 
 $last_content = get_field('last_content');
+$teacher_inner_page_video = get_field('teacher_inner_page_video');
 
 $count_blue = 0;
 $count_white = 0;
@@ -23,6 +24,22 @@ $count_white = 0;
 
 
 <?php get_template_part('template-parts/banner')?>
+
+
+
+  <?php if($teacher_inner_page_video != '') { ?> 
+        <div class="training-section">
+            <div class="container">
+                  <div class="new-offer padding">
+                      <div class="title ">
+                          <div class="embed-responsive embed-responsive-1by1 padding" >
+                                  <iframe class="embed-responsive-item" src="<?php echo $teacher_inner_page_video; ?>" width="560" height="315" ></iframe>
+                          </div>                   
+                       </div>
+                   </div>  
+             </div>                   
+          </div>
+          <?php  } ?>
 
 
 
