@@ -7,17 +7,20 @@ get_header();
 $Teacher_tranning_card_1 = get_field('teacher_tranning_card_1');
 $Teacher_tranning_card_2 = get_field('teacher_tranning_card_2');
 $Teacher_tranning_card_3 = get_field('teacher_tranning_card_3');
+$short_content_video = get_field('short_content_video');
 
 ?>
   <?php get_template_part('template-parts/banner')?>
     <div class="training-section">
         <div class="container">
            <div class="new-offer">
-               <div class="title">
-                   <h1><?php echo get_post_meta( get_the_ID(), 'sub_heading',  true ); ?></h1>
-                   <p><?php echo get_post_meta( get_the_ID(), 'short_content',  true ); ?></p> <br><br>
-                   <p><?php echo get_post_meta( get_the_ID(), 'short_content_video',  true ); ?></p>
-               </div>
+                    <div class="title">
+                        <h1><?php echo get_post_meta( get_the_ID(), 'sub_heading',  true ); ?></h1>
+                        <p><?php echo get_post_meta( get_the_ID(), 'short_content',  true ); ?></p> <br><br>
+                         <div class="embed-responsive embed-responsive-1by1" >
+                                 <iframe class="embed-responsive-item" src="<?php echo $short_content_video; ?>" width="560" height="315" ></iframe>
+                         </div>                   
+                    </div>
                <div class="training-cards">
                    <div class="row">
                        <div class="col-md-4 card-padding">

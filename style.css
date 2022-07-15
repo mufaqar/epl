@@ -362,7 +362,7 @@ div.faqscat:nth-child(3n) .graySec {
     text-transform: uppercase;
 }
 .pricing-section .new-offer .title h1 {
-    padding: 2% 0 2% 0% !important;
+    padding: 2% 0 0.6% 0% !important;
     text-transform:uppercase 
 }
 .extra_padding {
