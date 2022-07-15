@@ -9,21 +9,14 @@ $Teacher_tranning_card_2 = get_field('teacher_tranning_card_2');
 $Teacher_tranning_card_3 = get_field('teacher_tranning_card_3');
 
 ?>
- <div class="teacher-training-banner">
-       <div class="banner-content">
-        <h1><?php echo get_post_meta( get_the_ID(), 'banner_heading',  true ); ?></h1>
-        <p><?php echo get_post_meta( get_the_ID(), 'banner_content',  true ); ?></p>
-        <div class="banner-btn">
-            <button class="btn btn-border">Enroll</button>
-        </div>
-       </div>
-    </div>
+  <?php get_template_part('template-parts/banner')?>
     <div class="training-section">
         <div class="container">
            <div class="new-offer">
                <div class="title">
                    <h1><?php echo get_post_meta( get_the_ID(), 'sub_heading',  true ); ?></h1>
-                   <P><?php echo get_post_meta( get_the_ID(), 'short_content',  true ); ?></P>
+                   <p><?php echo get_post_meta( get_the_ID(), 'short_content',  true ); ?></p> <br><br>
+                   <p><?php echo get_post_meta( get_the_ID(), 'short_content_video',  true ); ?></p>
                </div>
                <div class="training-cards">
                    <div class="row">

@@ -44,19 +44,20 @@ get_header();
             </div>
            </div>
            <div class="new-offer">
-               <div class="title">
+               
                    <h1><?php if($query == '') { //echo "All";
                    } 
                    else {
                                     $terms_name = get_term_by('slug',$query, 'pricing_types'); 
 
                                    // print_r($terms_name);
-                                    echo $terms_name->name;
+                                   
+                                    echo '<div class="title ">';
+                                    echo "<h1> $terms_name->name </h1> </div>";
 
                                    
                                     
-                        } ?> </h1>
-               </div>
+                        } ?> 
                <div class="pricing-cards">
                <div class="row">
 
@@ -73,7 +74,7 @@ get_header();
                                 
                                 $cat_name = $p_cat->name ;
                                 $cat_slug = $p_cat->slug ;
-                                echo '<div class="title">';
+                                echo '<div class="title cat_title">';
                                 echo "<h1> $cat_name </h1> </div>";
 
                                                  
