@@ -39,10 +39,9 @@ $enroll_btn = get_field('enroll_button_hide_show');
 
     </div>
     <?php if($enroll_btn == 'Show') { ?>
-        <div class="enroll">
-            <div class="padding">
-                <a href="<?php echo home_url('/contact-us'); ?>">Enroll Now</a>
-            </div>
+        <div class="primary-btn">          
+                <a href="<?php echo home_url('/contact-us'); ?>" class="btn-border btn-dark">Enroll Now</a>
+                
         </div>
     <?php } ?>
   </div>
