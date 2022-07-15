@@ -106,8 +106,8 @@ $workshops = get_field('our_workshops');
             <div class="upcoming-course">
                 <div class="container">
                     <div class="text-center">
-                        <div class="padding">
-                            <button><a href="<?php the_field('class_time_table_link') ?>">VIEW CLASS TIMETABLE</a></button>
+                        <div class="primary-btn">
+                        <a href="<?php the_field('class_time_table_link') ?>" class="btn-border btn-light">VIEW CLASS TIMETABLE</a>
                         </div>
                     </div>
                 </div>
