@@ -36,10 +36,10 @@ get_header();
                                                           $faq_name = $faq->name ;  ?>
 
                 <div class="faqscat" id="<?php echo $faq_slug ?>" >
-                    <div class="graySec smooth-goto">
-                            <div class="accordion-sections">
+                    <div class="graySec">
+                            <div class="events-sections">
                                 <div class="container">
-                                    <div class="accordion-section">
+                                    <div class="events-section">
                                           <h1><?php echo $faq_name ?></h1>
                                           <div class="accordion accordion-flush" id="accordionFlushExample">
                                                 <?php query_posts(array(
