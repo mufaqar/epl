@@ -5,14 +5,13 @@
 
 get_header();
 ?>
-
-
+1
+2
+3
+4
+5
   
 <?php get_template_part('template-parts/banner')?>
-
-new asdfasf 
-
-
     <div class="faqHead">
         <div class="container">
               <div class="row">
