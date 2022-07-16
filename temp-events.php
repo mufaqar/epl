@@ -10,7 +10,7 @@ get_header();
   
 <?php get_template_part('template-parts/banner')?>
 
-\zsc
+new asdfasf 
 
 
     <div class="faqHead">
