@@ -473,3 +473,88 @@ function cptui_register_my_cpts_client() {
 }
 
 add_action( 'init', 'cptui_register_my_cpts_client' );
+
+
+
+
+function cptui_register_my_cpts_events() {
+
+	/**
+	 * Post Type: Events.
+	 */
+
+	$labels = [
+		"name" => __( "Events", "hello-elementor" ),
+		"singular_name" => __( "Event", "hello-elementor" ),
+	];
+
+	$args = [
+		"label" => __( "Events", "hello-elementor" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => [ "slug" => "events", "with_front" => true ],
+		"query_var" => true,
+		"supports" => [ "title", "editor", "thumbnail" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "events", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_events' );
+
+
+
+
+
+
+
+
+function cptui_register_my_taxes_event_sesstion() {
+
+	/**
+	 * Taxonomy: Sessions.
+	 */
+
+	$labels = [
+		"name" => __( "Sessions", "hello-elementor" ),
+		"singular_name" => __( "Session", "hello-elementor" ),
+	];
+
+	
+	$args = [
+		"label" => __( "Sessions", "hello-elementor" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => true,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'event_sesstion', 'with_front' => true,  'hierarchical' => true, ],
+		"show_admin_column" => true,
+		"show_in_rest" => true,
+		"rest_base" => "event_sesstion",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"show_in_quick_edit" => true,
+		"show_in_graphql" => false,
+	];
+	register_taxonomy( "event_sesstion", [ "events" ], $args );
+}
+add_action( 'init', 'cptui_register_my_taxes_event_sesstion' );
+

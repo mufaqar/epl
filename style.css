@@ -2,7 +2,7 @@
 Theme URI: http://mufaqar.com 
 Author URI: https://mufaqar.com
 Description: Description 
-Version: 1.1.8
+Version: 1.1.9
  Text Domain: epl-theme */
 .class-detail-1 img {
   height: auto !important;
@@ -555,6 +555,16 @@ div.healcode {
 
 /* Event Page  Start */
 
+.card {
+  border: 5px solid #fff;
+  border-radius: 0;
+  padding: 5px;
+  max-width: 320px;
+}
+.card-img-top {
+  border-radius: 0;
+}
+
 .event-section h1 {
   font-family: 'Brandon Grotesque';
   font-style: normal;
@@ -564,6 +574,7 @@ div.healcode {
   text-transform: uppercase;
   color: #53565a;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .overlayheading {
@@ -571,11 +582,11 @@ div.healcode {
   background: #00aec7;
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   font-family: 'Brandon Grotesque';
   font-style: normal;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
 }
 
@@ -612,6 +623,10 @@ div.healcode {
 .event .btn:hover {
   background-color: #00aec7;
   color: #fff;
+}
+.card-body span {
+  color: #00aec7;
+  font-weight: bold;
 }
 
 /* Event Page  End */
