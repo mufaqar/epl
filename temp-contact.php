@@ -14,7 +14,6 @@
             if( have_rows('address') ): while ( have_rows('address') ) : the_row();    
             
             $index = get_row_index();
-
                 
                 $title =  get_sub_field('title');
                 $address =  get_sub_field('address');
@@ -40,8 +39,7 @@
               <div class="padding">
                 <div class="heading">
                   <h3>Address</h3>
-                  <p><?php echo $address ?></p>
-                  
+                  <p><?php echo $address ?></p>                  
                 </div>
                 <div class="heading mt-4">
                   <h3>NEAREST TUBE</h3>
