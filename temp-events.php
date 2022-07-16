@@ -7,41 +7,24 @@ get_header();
 ?>
   
 <?php get_template_part('template-parts/banner')?>
-    <div class="faqHead">
-        <div class="container">
-              <div class="row">
-                        
-                                        <?php   
-                                              $faqs_tax = get_terms( array('taxonomy' => 'faq_cat','hide_empty' => false ) ); 
-                                              foreach( $faqs_tax as $faq )  {
-                                                          $faq_slug = $faq->slug ;
-                                                          $faq_name = $faq->name ; ?>  
-                                                          <div class="col-lg-3 col-md-4 p-0">
-                                                            <div class="box">                          
-                                                               <a class="smooth-goto" href="#<?php echo $faq_slug?>" ><?php echo $faq_name?></a>
-                                                            </div>
-                                                          </div>   
-                                                              <?php
-                                                  }                                                    
-                                        ?>
-                                       
-              </div>
-            </div>
-        </div>
+   
 
 
 
         <div class="faqs-accordion">
-              <?php   foreach( $faqs_tax as $faq )  {   $faq_slug = $faq->slug ;
+              <?php 
+                $faqs_tax = get_terms( array('taxonomy' => 'faq_cat','hide_empty' => false ) ); 
+              
+              foreach( $faqs_tax as $faq )  {   $faq_slug = $faq->slug ;
                                                           $faq_name = $faq->name ;  ?>
 
                 <div class="faqscat" id="<?php echo $faq_slug ?>" >
                     <div class="graySec">
                             <div class="events-sections">
                                 <div class="container">
-                                    <div class="events-section">
+                                    <div class="event-section">
                                           <h1><?php echo $faq_name ?></h1>
-                                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                                          <div class="row gx-5">
                                                 <?php query_posts(array(
                                                           'post_type' => 'faqs',
                                                           'posts_per_page' => -1,
@@ -51,18 +34,24 @@ get_header();
                                                       )); 
                                                       if (have_posts()) :  while (have_posts()) : the_post(); global $post; $post_slug = $post->post_name; ?>
 
-                                                                        <div class="accordion-item">
-                                                                            <h2 class="accordion-header" id="flush-headingOne">
-                                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-<?php echo $post_slug?>" aria-expanded="false" aria-controls="flush-<?php echo $post_slug?>">
-                                                                                <?php the_title(); ?>
-                                                                                </button>
-                                                                            </h2>
-                                                                            <div id="flush-<?php echo $post_slug?>" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                                                  <div class="accordion-body">
-                                                                                    <p><?php the_content()?></p>
-                                                                                </div>                                              
+                                                                <div class="col-md-4 mb-5 mr-2">
+                                                                                
+                                                                                                                                                
+                                                                            <div class="card event ">
+                                                                                 <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="Event">
+                                                                                 <div class="overlayheading">Date : 9th & 10th November 2018</div>
+                                                                                    <div class="card-body">
+                                                                                            <h5 class="card-title">Brooke Siler </h5>                                                                                 
+                                                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus non vitae viverra consectetur. Quam amet, enim at diam rutrum urna,</p>
+                                                                                            <p> Cost : workshop £120.00, 1 day £195.00, 2 days £375.00</p>
+                                                                                            <div class="footer-btn">
+                                                                                            <a href="#" class="btn btn_info">Info</a>
+                                                                                            <a href="#" class="btn active"> Enroll</a>
+                                                                                            </div>
+                                                                                    </div>                                                                       
+
                                                                             </div>
-                                                                        </div>
+                                                                 </div>
 
 
                                                     <?php endwhile; wp_reset_query(); else : ?>
