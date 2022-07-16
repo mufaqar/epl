@@ -9,7 +9,7 @@ get_header();
 2
 3
 4
-5
+
   
 <?php get_template_part('template-parts/banner')?>
     <div class="faqHead">
