@@ -7,8 +7,7 @@ get_header();
 ?>
 1
 2
-3
-4
+
 
   
 <?php get_template_part('template-parts/banner')?>
