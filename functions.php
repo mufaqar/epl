@@ -77,6 +77,9 @@ if ( ! function_exists( 'ct_custom_setup' ) ) :
 	
 		add_image_size( 'class-thumbnail', 300, 9999 );
 		add_image_size( 'team-thumbnail', 350, 9999 );
+		add_image_size( 'event-thumbnail', 200, true );
+
+		
 		
 	}
 endif;

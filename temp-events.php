@@ -11,7 +11,7 @@ get_header();
 
 
 
-        <div class="faqs-accordion">
+        <div class="faqs-accordion epl_events">
               <?php 
                 $faqs_tax = get_terms( array('taxonomy' => 'event_sesstion','hide_empty' => false ) ); 
               
@@ -29,7 +29,7 @@ get_header();
                                                           'post_type' => 'events',
                                                           'posts_per_page' => -1,
                                                           'order' => 'asc',
-                                                          // 'faq_cat' => $faq_slug
+                                                          'event_sesstion' => $faq_slug
                                                     
                                                       )); 
                                                       if (have_posts()) :  while (have_posts()) : the_post(); global $post; $post_slug = $post->post_name; 
@@ -38,15 +38,25 @@ get_header();
 
                                                                 <div class="col-md-4 mb-5 mr-2 ">                                                
                                                                             <div class="card event ">
-                                                                                 <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="Event">
+                                                                                
+                                                                                 <?php if (has_post_thumbnail()) {
+                                    the_post_thumbnail('event-thumbnail');
+                                } else { ?>
+                                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/inductions.jpg" alt="Featured Thumbnail" />
+                                <?php } ?>
                                                                                  <div class="overlayheading"><strong>Date:</strong> <?php the_field('date'); ?></div>
                                                                                     <div class="card-body">
                                                                                             <h5 class="card-title"><?php the_title()?> </h5>                                                                                 
-                                                                                            <p class="card-text"><?php the_content()?></p>
-                                                                                            <p> <span> Cost: </span> <?php the_field('cost'); ?></p>
+                                                                                            <p class="card-text"><?php the_field('short_info'); ?></p>
+
+                                                                                            <div style="display:flex"> 
+                                                                                                <strong> Cost: </strong>
+                                                                                                <p class="cost_data"><?php the_field('cost'); ?></p>
+                                                                                            </div>
+
                                                                                             <div class="footer-btn">
-                                                                                            <a href="#" class="btn btn_info">Info</a>
-                                                                                            <a href="#" class="btn active"> Enroll</a>
+                                                                                            <a href="<?php the_permalink()?>" class="btn btn_info">Info</a>
+                                                                                            <a href="<?php the_field('enroll_link'); ?>" class="btn active"> Enroll</a>
                                                                                             </div>
                                                                                     </div>                                                                       
 

@@ -357,6 +357,9 @@ div.healcode a.action_icon img {
 div.faqscat:nth-child(2n) .graySec {
   background-color: #fff !important;
 }
+div.faqscat:nth-child(2n) .graySec {
+  background-color: #00aec7 !important;
+}
 
 div.faqscat:nth-child(3n) .graySec {
   background-color: #00aec7 !important;
@@ -561,8 +564,11 @@ div.healcode {
   padding: 5px;
   max-width: 320px;
 }
-.card-img-top {
+.card img {
   border-radius: 0;
+  width: 100%;
+  max-height: 200px;
+  min-height: 200px;
 }
 
 .event-section h1 {
@@ -583,7 +589,6 @@ div.healcode {
   width: 100%;
   text-align: center;
   padding: 12px;
-  font-family: 'Brandon Grotesque';
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -627,6 +632,107 @@ div.healcode {
 .card-body span {
   color: #00aec7;
   font-weight: bold;
+}
+
+.single_eventpage {
+  background: #ffffff;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035);
+}
+
+.single_eventpage h2 {
+  font-family: 'Brandon Grotesque';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 33px;
+
+  letter-spacing: 0.854101px;
+
+  color: #53565a;
+}
+
+.epl_events>div:nth-child(even){
+  background: #00aec7  !important;
+}
+.epl_events>div:nth-child(odd){
+  background: #F7F7F7  !important;
+}
+
+.epl_events div.faqscat:nth-child(2n) .graySec{
+  background: transparent !important;
+}
+.epl_events div.faqscat:nth-child(3n) .graySec{
+  background: transparent !important;
+}
+.epl_events.faqs-accordion .graySec{
+  background: transparent !important;
+}
+.event-section h1{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque Black", Sans-serif;
+}
+.epl_events>div:nth-child(even) h1{
+  color:white !important;
+}
+.epl_events .overlayheading{
+  text-align: left !important;
+  padding-left: 1.4rem;
+}
+.epl_events .event .card-title{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #53565A;
+  font-family: "Brandon Grotesque Black", Sans-serif;
+}
+.epl_events .card-body p{
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #53565A;
+}
+.epl_events .card-body strong{
+  color: #00aec7;
+}
+.cost_data{
+  margin-left: 1rem;
+  font-weight: 400;
+}
+.epl_events .footer-btn a{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00AEC7;
+  font-family: "Brandon Grotesque Black", Sans-serif;
+}
+.epl_events .footer-btn a:nth-child(2){
+  color: white;
+}
+.single_eventpage h2{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.854101px;
+  color: #53565A;
+  margin-top: 3rem;  
+  font-family: "Brandon Grotesque Black", Sans-serif;
+  margin-bottom: .5rem;
+}
+.single_eventpage p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.759201px;
+  color: #77838F;
+}
+.single__events{
+  background: #f7f7f7 !important;
 }
 
 /* Event Page  End */
