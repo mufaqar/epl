@@ -34,6 +34,7 @@ $banner_type = get_field('banner_type');
                     <a class="btn-border btn-light" href="<?php echo $banner_link ?>"><?php echo $button_text ?></a>
                 </div>  
             </div>
+			<?php include('event.php')?>
             </div>
         </div>
 	</section>
@@ -47,6 +48,7 @@ $banner_type = get_field('banner_type');
 					<a class="btn-border btn-light" href="<?php echo $banner_link; ?>"><?php echo $button_text ?></a>
 				</div>  
 			<?php }  ?>
+			<?php include('event.php')?>
 		</div>
 	</div>
 <?php }  ?>
