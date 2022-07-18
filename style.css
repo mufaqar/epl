@@ -781,9 +781,5 @@ div.healcode {
 .pricing-banner .banner-content h1 {
   text-transform: uppercase;
 }
-.epl_events .footer-btn a:nth-child(2):hover {
-  background: white !important;
-  border: 1px solid #00aec7 !important;
-  color: #00aec7 !important;
-}
+
 /* Event Page  End */
