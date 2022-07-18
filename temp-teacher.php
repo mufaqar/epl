@@ -66,7 +66,7 @@ $short_content_video = get_field('short_content_video');
         <div class="container">
             <div class="text-center">
                 <div class="primary-btn">
-                    <a href="#" class="btn-border btn-dark">VIEW UPCOMING COURSE TIMETABLE</a>
+                    <a href="<?php the_field('view_upcoming_link'); ?>" class="btn-border btn-dark"><?php the_field('view_upcoming_title'); ?></a>
                 </div>
             </div>
         </div>

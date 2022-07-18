@@ -18,7 +18,7 @@ $tp = get_template_directory_uri();
 ?>
 
 
-<?php get_template_part('template-parts/banner')?>
+<?php get_template_part('template-parts/banner-event')?>
 
  
 
