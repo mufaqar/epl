@@ -60,7 +60,7 @@ get_header();
 
                                                     <div class="footer-btn">
                                                         <a href="<?php the_permalink() ?>" class="btn btn_info">Info</a>
-                                                        <a href="<?php the_field('enroll_link'); ?>" class="btn active"> Enroll</a>
+                                                        <a href="<?php the_field('enroll_link'); ?>" class="btn"> Enrol</a>
                                                     </div>
                                                 </div>
 
