@@ -17,9 +17,9 @@ $short_content_video = get_field('short_content_video');
                     <div class="title">
                         <h1><?php echo get_post_meta( get_the_ID(), 'sub_heading',  true ); ?></h1>
                         <p><?php echo get_post_meta( get_the_ID(), 'short_content',  true ); ?></p> <br><br>
-                         <div class="embed-responsive embed-responsive-1by1" >
-                                 <iframe class="embed-responsive-item" src="<?php echo $short_content_video; ?>" width="560" height="315" ></iframe>
-                         </div>                   
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="<?php echo $short_content_video; ?>"></iframe>
+                        </div>                                       
                     </div>
                <div class="training-cards">
                    <div class="row">
