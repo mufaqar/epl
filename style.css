@@ -805,4 +805,8 @@ div.healcode {
   .exhale-pilates .time-class .btn-buy {
     margin-left: 0;
   }
+
+  .primary-btn .btn-border {
+    padding: 10px;
+  }
 }
