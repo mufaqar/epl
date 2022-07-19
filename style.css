@@ -794,3 +794,9 @@ div.healcode {
 }
 
 /* Event Page  End */
+
+@media screen and (max-width: 1024px) {
+  .recommended-by h2 {
+    font-size: 25px;
+  }
+}
