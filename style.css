@@ -698,6 +698,7 @@ div.healcode {
   line-height: 24px;
   color: #53565a;
   font-family: 'Gotham Book', Sans-serif;
+  text-align: justify;
 }
 .epl_events .card-body strong {
   color: #00aec7;
