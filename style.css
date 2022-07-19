@@ -795,8 +795,14 @@ div.healcode {
 
 /* Event Page  End */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .recommended-by h2 {
     font-size: 25px;
+  }
+  .exhale-pilates .para {
+    width: 100%;
+  }
+  .exhale-pilates .time-class .btn-buy {
+    margin-left: 0;
   }
 }
