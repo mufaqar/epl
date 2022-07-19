@@ -1,6 +1,6 @@
 
 
-<div class="pricing-banner" style="background-color:#00AEC7;background-image: url('<?php echo $banner_image ?>');">
+<div class="pricing-banner" style="background-color:#66cbd9;background-image: url('<?php the_field('banner_background_image'); ?>');">
 		<div class="banner-content">       
 			
          <h1><?php echo the_title(); ?> </h1> 
