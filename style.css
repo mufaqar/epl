@@ -786,7 +786,7 @@ div.healcode {
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
-    padding: 0;
+    padding: 0 !important;
   }
 }
 
