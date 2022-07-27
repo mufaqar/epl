@@ -616,7 +616,7 @@ div.healcode {
   text-align: center;
   text-transform: uppercase;
   color: #00aec7;
-  border: 1px solid #00aec7;
+  border: 1px solid #66cbd9;
   border-radius: 0;
   padding: 12px 2%;
   width: 46%;
@@ -628,7 +628,7 @@ div.healcode {
 
 .event .active,
 .event .btn:hover {
-  background-color: #00aec7;
+  background-color: #66cbd9;
   color: #fff;
 }
 .card-body span {
@@ -716,7 +716,7 @@ div.healcode {
   line-height: 23px;
   text-align: center;
   text-transform: uppercase;
-  color: #00aec7;
+  color: #66cbd9;
   font-family: 'Brandon Grotesque Black', Sans-serif;
 }
 
@@ -787,6 +787,9 @@ div.healcode {
   text-transform: uppercase;
 }
 
+.pricing-section .pricing-cards .card-padding .card-1 {
+  height: 360px;
+}
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
     padding: 0 !important;
@@ -808,5 +811,6 @@ div.healcode {
 
   .primary-btn .btn-border {
     padding: 10px;
+    font-size: 18px;
   }
 }
