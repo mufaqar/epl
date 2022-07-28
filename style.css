@@ -28,15 +28,15 @@ Version: 1.2.1
   height: 48px;
 }
 
-.pricing_card_wrapper .card-padding:nth-child(even) {
+.pricing_card_wrapper .row .card-padding:nth-child(even) {
   background-color: #acacac;
 }
 
-.pricing_card_wrapper .card-padding:nth-child(odd) {
+.pricing_card_wrapper .row .card-padding:nth-child(odd) {
   background-color: #00aec7;
 }
 
-.pricing_card_wrapper .card-padding .card-1 {
+.pricing_card_wrapper .row .card-padding .card-1 {
   background: none !important;
 }
 
@@ -134,16 +134,16 @@ a {
   cursor: pointer;
 }
 
-.pricing_card_wrapper .card-padding:nth-child(even) {
+.pricing_card_wrapper .row .card-padding .card-1 {
+  background: none !important;
+}
+
+.pricing_card_wrapper .row .card-padding:nth-child(even) .card-1 {
   background-color: #acacac;
 }
 
-.pricing_card_wrapper .card-padding:nth-child(odd) {
+.pricing_card_wrapper .row .card-padding:nth-child(odd) .card-1 {
   background-color: #00aec7;
-}
-
-.pricing_card_wrapper .card-padding .card-1 {
-  background: none !important;
 }
 
 .instagram-feed {
@@ -790,34 +790,121 @@ div.healcode {
 .pricing-section .pricing-cards .card-padding .card-1 {
   height: 360px;
 }
-.slick-track{
-	display:flex !important;
-	align-items:center !important;
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
 }
-.slick-initialized .slick-slide{
-	border: 1px solid #66CBD9; 
-	min-height: 100px;
-	margin: 10px;
-	position:relative;
+.slick-initialized .slick-slide {
+  border: 1px solid #66cbd9;
+  min-height: 100px;
+  margin: 10px;
+  position: relative;
 }
-.slick-initialized .slick-slide img{
-	max-width:160px;
-	margin: 0 auto !important;
-	position:absolute;
-	top:50%;
-	transform:translatey(-50%);
-}
-
-.class-instructor .class a:hover{
-	background: #fff;
-	color: #00AEC7;
-}
-.class-instructor .instructor a:hover{
-	background: #fff;
-	color: #00AEC7;
-	border: 1px solid #fff
+.slick-initialized .slick-slide img {
+  max-width: 160px;
+  margin: 0 auto !important;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
 }
 
+.class-instructor .class a:hover {
+  background: #fff;
+  color: #00aec7;
+}
+.class-instructor .instructor a:hover {
+  background: #fff;
+  color: #00aec7;
+  border: 1px solid #fff;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+}
+.slick-initialized .slick-slide {
+  border: 1px solid #66cbd9;
+  min-height: 100px;
+  margin: 10px;
+  position: relative;
+}
+.slick-initialized .slick-slide img {
+  max-width: 160px;
+  margin: 0 auto !important;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+}
+#customer_details .col-1 {
+  width: 100%;
+}
+.woocommerce-billing-fields__field-wrapper p {
+  display: flex;
+  flex-direction: column;
+}
+.woocommerce-billing-fields input {
+  padding: 8px;
+  width: 100%;
+}
+#order_review .shop_table {
+  width: 100%;
+}
+.woocommerce-additional-fields {
+  display: none;
+}
+
+.extra_padding .woocommerce {
+  max-width: 600px;
+}
+#billing_country_field span.woocommerce-input-wrapper,
+#billing_state_field span.woocommerce-input-wrapper {
+  padding: 12px;
+  border: 1px solid gray;
+  padding-top: 4px;
+  padding-left: 2px;
+}
+.select2-container--default .select2-selection--single,
+.woocommerce-info {
+  border: none;
+}
+.woocommerce-billing-fields h3,
+#order_review_heading {
+  font-family: 'Brandon Grotesque Black', Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+.woocommerce-checkout-payment ul {
+  padding-left: 0;
+  margin-top: 1rem;
+}
+#place_order {
+  font-family: 'Gilory Light', Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #00aec7;
+  border: 1px solid #00aec7;
+  padding: 10px 30px;
+  border-radius: 0px;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+#place_order:hover {
+  color: #00aec7;
+  border: 1px solid #00aec7;
+  background: transparent;
+}
+
+/* .training-cards{
+  max-height: 567px;
+  overflow: hidden;
+}
+#tr-load-more{
+  cursor: pointer;
+} */
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
