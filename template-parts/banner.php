@@ -30,9 +30,11 @@ $banner_type = get_field('banner_type');
             <div class="w-100 text-white banner-content">
 				<?php if ($banner_title != '') { ?>  <h1><?php echo $banner_title; ?> </h1>  <?php }  ?>			
 				<?php if ($banner_sub_title != '') { ?>  <p><?php echo $banner_sub_title; ?></p>   <?php }  ?>
+				<?php if ($banner_link != '') { ?> 
                 <div class="primary-btn">
                     <a class="btn-border btn-light" href="<?php echo $banner_link ?>"><?php echo $button_text ?></a>
                 </div>  
+				<?php }  ?>
             </div>
 			<?php include('event.php')?>
             </div>
