@@ -89,7 +89,7 @@ $workshops = get_field('our_workshops');
                 <div class="images">
                     <img src="<?php echo $workshops['workshops_image_2'] ?>" alt="workshops">
                     <div class="heading">
-                        <p><a href="<?php echo $workshops['workshops_link_2'] ?>"><?php echo $workshops['workshops_title_1'] ?></a></p>
+                        <p><a href="<?php echo $workshops['workshops_link_2'] ?>"><?php echo $workshops['workshops_title_2'] ?></a></p>
                     </div>
                 </div>
             </div>
