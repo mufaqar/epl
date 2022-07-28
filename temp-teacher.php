@@ -56,13 +56,7 @@ $short_content_video = get_field('short_content_video');
         </div>
     </div>
 </div>
-<div class="arrow-down">
-    <div class="container">
-        <div class="text-center">
-            <img id="tr-load-more" src="<?php bloginfo('template_directory'); ?>/assets/img/arrow-down.svg" alt="arrow-down" onclick="trLoadMore()">
-        </div>
-    </div>
-</div>
+
 <div class="upcoming-course">
     <div class="container">
         <div class="text-center">
