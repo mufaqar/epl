@@ -1487,7 +1487,7 @@ button {
 }
 
 .class-detail-3 .clr {
-  background-color: white;
+  /* background-color: white; */
   text-align: center;
   display: flex;
   align-items: center;

@@ -39,20 +39,25 @@
                                 <a href="<?php the_field('instagram', 'option'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta"></a>
                             </div>
                            <div class="content-1">
-                               <p>Studio enquires Footer </p>
-                               <a href="mailto:info@exhalepilateslondon.com">info@exhalepilateslondon.com</a>
+                               <p><?php the_field('studio_enquires_text', 'option') ?></p>
+                               <a href="mailto:info@exhalepilateslondon.com"><?php the_field('studio_enquires_email', 'option') ?></a>
                            </div>
                            <div class="content-2">
-                            <p>Exhale Education enquires</p>
-                            <a href="mailto:education@exhalepilateslondon.com">education@exhalepilateslondon.com</a>
+                            <p><?php the_field('education_enquires_text', 'option') ?></p>
+                            <a href="mailto:education@exhalepilateslondon.com"><?php the_field('education_enquires_email', 'option') ?></a>
                         </div>
                         <div class="content-3">
-                            <a href="tel:+44 (0)207 186 0611">+44 (0)207 186 0611</a>
+                            <a href="tel:+44 (0)207 186 0611"><?php the_field('tel_info_top', 'option') ?></a>
                         </div>
-                        <div class="content-4">
-                            <a href="<?php echo home_url('terms'); ?>">Terms</a>
-                            <a href="<?php echo home_url('privacy'); ?>">Privacy</a>
-                            <a href="<?php echo home_url('cookie'); ?>">Cookie Declaration</a>
+                        <div class="content-4 footer_menu">
+                            <?php 
+                                wp_nav_menu( array(
+                                    'theme_location'  => 'footer',							
+                                    'container'       => '',
+                                    'menu_class'      => '',
+                                    
+                                ) );
+                            ?>
                         </div>
                         </div>
                     </div>

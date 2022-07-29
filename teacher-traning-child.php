@@ -2,7 +2,7 @@
 
 /**
  * Template Name: Teacher Traning Child 
-*/
+ */
 
 /**
  * The template for displaying all single posts
@@ -17,69 +17,76 @@ get_header();
 $last_content = get_field('last_content');
 $teacher_inner_page_video = get_field('teacher_inner_page_video');
 
+
 $count_blue = 0;
 $count_white = 0;
 
 ?>
 
 
-<?php get_template_part('template-parts/banner')?>
+<?php get_template_part('template-parts/banner') ?>
 
 
 
-  <?php if($teacher_inner_page_video != '') { ?> 
-        <div class="training-section">
-            <div class="container">
-                  <div class="new-offer padding">
-                      <div class="title ">
-                          <div class="embed-responsive embed-responsive-1by1 padding" >
-                                  <iframe class="embed-responsive-item" src="<?php echo $teacher_inner_page_video; ?>" width="560" height="315" ></iframe>
-                          </div>                   
-                       </div>
-                   </div>  
-             </div>                   
+<?php if ($teacher_inner_page_video != '') { ?>
+  <div class="training-section">
+    <div class="container">
+      <div class="new-offer padding">
+        <div class="title ">
+          <div class="embed-responsive embed-responsive-1by1 padding">
+            <iframe class="embed-responsive-item" src="<?php echo $teacher_inner_page_video; ?>" width="560" height="315"></iframe>
           </div>
-          <?php  } ?>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php  } ?>
 
 
 
 
-<?php if( have_rows('teacher_traning_child') ): ?>
-    <?php  while( have_rows('teacher_traning_child') ): the_row();   $index = get_row_index(); ?>
-        <?php if( get_row_layout() == 'with_blue_background' ):  ?>          
-          <div class="class-detail-2 single_class">
-            <div class="row g-0">
-              <div class="col-md-6 clr">
-              <div class="padding">
-              <h1><?php  the_sub_field('title'); ?></h1>                      
-              <?php get_template_part('template-parts/shortlong')?>
-              </div>
-              </div>
-              <div class="col-md-6">
-                <div class="side-img">              
-                  <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
-                </div>
+<?php if (have_rows('teacher_traning_child')) : ?>
+  <?php while (have_rows('teacher_traning_child')) : the_row();
+    $index = get_row_index(); ?>
+    <?php if (get_row_layout() == 'with_blue_background') :  ?>
+      <div class="class-detail-2 single_class">
+        <div class="row g-0">
+          <div class="col-md-6 clr">
+            <div class="padding">
+              <h1><?php the_sub_field('title'); ?></h1>
+              <div class="teacher_traning_child_content">
+                <p><?php the_sub_field('short_info'); ?></p>
               </div>
             </div>
           </div>
-          
-        <?php  elseif( get_row_layout() == 'with_white_background' ): $image = get_sub_field('image');?>
-           <div class="class-detail-3 single_class">
-                  <div class="row g-0">
-                    <div class="col-md-6">
-                      <div class="side-img">
-                      <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
-                      </div>
-                    </div>
-                    <div class="col-md-6 clr">
-                    <div class="padding">
-                    <h1><?php  the_sub_field('title'); ?></h1>                     
-                    <?php get_template_part('template-parts/shortlong')?>
-                    </div>
-                  </div>
+          <div class="col-md-6">
+            <div class="side-img">
+              <img src="<?php the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index ?>">
             </div>
-        <?php  endif; ?>
-    <?php endwhile; ?>
+          </div>
+        </div>
+      </div>
+
+    <?php elseif (get_row_layout() == 'with_white_background') : $image = get_sub_field('image'); ?>
+      <div class="class-detail-3 single_class">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <div class="side-img">
+              <img src="<?php the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index ?>">
+            </div>
+          </div>
+          <div class="col-md-6 clr">
+            <div class="padding">
+              <h1><?php the_sub_field('title'); ?></h1>
+              <div class="teacher_traning_child_content">
+                <p><?php the_sub_field('short_info'); ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+  <?php endwhile; ?>
 <?php endif; ?>
 
 
@@ -87,14 +94,14 @@ $count_white = 0;
   <div class="row g-0">
     <div class="col-md-6 left">
       <div class="padding" style="padding: 3rem;">
-        <h1><?php  echo $last_content['left_heading']; ?></h1>
-        <p><?php  echo $last_content['left_content']; ?></p>
+        <h1><?php echo $last_content['left_heading']; ?></h1>
+        <p><?php echo $last_content['left_content']; ?></p>
       </div>
     </div>
     <div class="col-md-6 clr" style="padding: 3rem;">
       <div class="padding">
-        <h1><?php  echo $last_content['right_heading']; ?></h1>
-        <p><?php  echo $last_content['right_content']; ?></p>
+        <h1><?php echo $last_content['right_heading']; ?></h1>
+        <p><?php echo $last_content['right_content']; ?></p>
       </div>
     </div>
   </div>
@@ -103,7 +110,7 @@ $count_white = 0;
 
 
 
-<?php get_template_part('template-parts/testimonial')?>
+<?php get_template_part('template-parts/testimonial') ?>
 
 
 
@@ -116,6 +123,7 @@ $count_white = 0;
     font-weight: 600;
     margin: 0;
   }
+
   .class-detail-2 .left {
     text-align: center;
     display: flex;
@@ -126,20 +134,25 @@ $count_white = 0;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .class-detail-2 .left div{
+
+  .class-detail-2 .left div {
     max-width: 550px;
   }
-  ._maxheigh{
+
+  ._maxheigh {
     max-height: 105px;
     overflow: hidden;
   }
-  ._arrow{
+
+  ._arrow {
     cursor: pointer;
   }
-  ._w100{
+
+  ._w100 {
     height: 100% !important;
   }
-  .pt-pb{
+
+  .pt-pb {
     margin: 2.5rem auto !important;
   }
 </style>

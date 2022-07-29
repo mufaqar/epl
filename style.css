@@ -4,7 +4,7 @@ Author URI: https://mufaqar.com
 Description: Description 
 Version: 1.2.1
  Text Domain: epl-theme */
-.class-detail-1 img {
+ .class-detail-1 img {
   height: auto !important;
 }
 
@@ -88,6 +88,10 @@ Version: 1.2.1
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .videosection video {
@@ -224,7 +228,7 @@ div.list_view div.pre-filters select:focus {
 }
 
 .healcode.appointments.list_view .header > h1 {
-  background: #00aec7;
+  background: #66CBD9;
   color: white;
   padding: 1rem;
 }
@@ -238,7 +242,7 @@ div.healcode .ui-widget-content {
 }
 
 div.healcode .ui-widget-header {
-  background: #00aec7;
+  background: #66CBD9;
   color: white;
   padding: 0.5rem;
 }
@@ -250,7 +254,7 @@ div.healcode .ui-widget-header a {
 div.healcode .ui-state-active,
 div.healcode .ui-widget-content .ui-state-active,
 div.healcode .ui-widget-header .ui-state-active {
-  background: #00aec7;
+  background: #66CBD9;
   color: white !important;
 }
 
@@ -450,6 +454,7 @@ div.faqscat:nth-child(3n) .graySec {
 
 .pricing-section .pricing-cards .card-padding .card-1 .btn-buy {
   margin-top: 20px;
+
 }
 
 .member a:hover {
@@ -491,7 +496,9 @@ div.faqscat:nth-child(3n) .graySec {
 div.healcode {
   z-index: 0;
 }
-
+.training-section .training-cards .card-padding .card-1 .btn-buy a{
+  padding-top: 3px !important;
+}
 .training-section .training-cards .card-padding .card-1 .btn-buy a:hover {
   background-color: #fff;
   color: #00aec7;
@@ -718,6 +725,10 @@ div.healcode {
   text-transform: uppercase;
   color: #66cbd9;
   font-family: 'Brandon Grotesque Black', Sans-serif;
+  
+}
+.card-body{
+	padding: 1rem;
 }
 
 .single_eventpage h2 {
@@ -788,7 +799,7 @@ div.healcode {
 }
 
 .pricing-section .pricing-cards .card-padding .card-1 {
-  height: 360px;
+  height: 415px;
 }
 .slick-track{
 	display:flex !important;
@@ -903,14 +914,78 @@ div.healcode {
 }
 .single_class .side-img img{
 	object-fit: cover !important;
+  height: 100%;
 }
  .single_class .clr{
 	padding-top:2rem;
 	padding-bottom:2rem;
 }
+.pricing-cards .card-1 .para{
+	max-height:120px;
+	overflow-y:scroll;
+}
+.training-cards .card-1 .para{
+	max-height: 280px;
+	overflow-y: scroll
+}
+.card-1 .para::-webkit-scrollbar {
+  width: 2px;
+}
+
+.card-1 .para::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+.pricing-section .pricing-cards .card-padding .card-1 .para {
+  max-width: 135px !important;
+  min-height: 135px;
+}
+.training-section .training-cards .card-padding .card-1 h2{
+  min-height: 75px;
+}
+.training-section .training-cards .card-padding .card-1 .para P{
+  min-height: 260px;
+}
 
 
+.teacher_traning_child_content{
+	max-height: 280px;
+	overflow-y: scroll
+}
+.teacher_traning_child_content::-webkit-scrollbar {
+  width: 2px;
+}
 
+.teacher_traning_child_content::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+.footer_menu .mob-block{
+	display: none !important;
+}
+.footer_menu ul#menu-footer-menu{
+	display: flex;
+	padding-left:0 !important
+}
+.epl_events div.faqscat:nth-child(2n) .graySec{
+  background: #66CBD9 !important;
+}
+div.healcode.appointments a.hc-button{
+  background: #66CBD9 !important;
+}
+.accordion-item ul li{
+	list-style: disc;
+}
+.our-studios .images .heading{
+  width: 200px !important;
+}
+div.healcode.appointments a.hc-button{
+	border:1px solid #66CBD9;
+}
+div.healcode.appointments a.hc-button:hover{
+	background: transparent !important;
+	border:1px solid #66CBD9;
+	color: #66CBD9 !important;
+}
 /* .training-cards{
   max-height: 567px;
   overflow: hidden;
@@ -953,5 +1028,11 @@ div.healcode {
   .primary-btn .btn-border {
     padding: 10px;
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .pricing-section .pricing-cards .card-padding .card-1 h3{
+    min-height: 62px;
   }
 }
