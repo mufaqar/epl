@@ -4,7 +4,7 @@ Author URI: https://mufaqar.com
 Description: Description 
 Version: 1.2.1
  Text Domain: epl-theme */
- .class-detail-1 img {
+.class-detail-1 img {
   height: auto !important;
 }
 
@@ -228,7 +228,7 @@ div.list_view div.pre-filters select:focus {
 }
 
 .healcode.appointments.list_view .header > h1 {
-  background: #66CBD9;
+  background: #66cbd9;
   color: white;
   padding: 1rem;
 }
@@ -242,7 +242,7 @@ div.healcode .ui-widget-content {
 }
 
 div.healcode .ui-widget-header {
-  background: #66CBD9;
+  background: #66cbd9;
   color: white;
   padding: 0.5rem;
 }
@@ -254,7 +254,7 @@ div.healcode .ui-widget-header a {
 div.healcode .ui-state-active,
 div.healcode .ui-widget-content .ui-state-active,
 div.healcode .ui-widget-header .ui-state-active {
-  background: #66CBD9;
+  background: #66cbd9;
   color: white !important;
 }
 
@@ -454,7 +454,6 @@ div.faqscat:nth-child(3n) .graySec {
 
 .pricing-section .pricing-cards .card-padding .card-1 .btn-buy {
   margin-top: 20px;
-
 }
 
 .member a:hover {
@@ -496,7 +495,7 @@ div.faqscat:nth-child(3n) .graySec {
 div.healcode {
   z-index: 0;
 }
-.training-section .training-cards .card-padding .card-1 .btn-buy a{
+.training-section .training-cards .card-padding .card-1 .btn-buy a {
   padding-top: 3px !important;
 }
 .training-section .training-cards .card-padding .card-1 .btn-buy a:hover {
@@ -725,10 +724,9 @@ div.healcode {
   text-transform: uppercase;
   color: #66cbd9;
   font-family: 'Brandon Grotesque Black', Sans-serif;
-  
 }
-.card-body{
-	padding: 1rem;
+.card-body {
+  padding: 1rem;
 }
 
 .single_eventpage h2 {
@@ -801,132 +799,135 @@ div.healcode {
 .pricing-section .pricing-cards .card-padding .card-1 {
   height: 415px;
 }
-.slick-track{
-	display:flex !important;
-	align-items:center !important;
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
 }
-.slick-initialized .slick-slide{
-	border: 1px solid #66CBD9; 
-	min-height: 100px;
-	margin: 10px;
-	position:relative;
+.slick-initialized .slick-slide {
+  border: 1px solid #66cbd9;
+  min-height: 100px;
+  margin: 10px;
+  position: relative;
 }
-.slick-initialized .slick-slide img{
-	max-width:160px;
-	margin: 0 auto !important;
-	position:absolute;
-	top:50%;
-	transform:translatey(-50%);
-}
-
-.class-instructor .class a:hover{
-	background: #fff;
-	color: #00AEC7;
-}
-.class-instructor .instructor a:hover{
-	background: #fff;
-	color: #00AEC7;
-	border: 1px solid #fff
+.slick-initialized .slick-slide img {
+  max-width: 160px;
+  margin: 0 auto !important;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
 }
 
-.slick-track{
-	display:flex !important;
-	align-items:center !important;
+.class-instructor .class a:hover {
+  background: #fff;
+  color: #00aec7;
 }
-.slick-initialized .slick-slide{
-	border: 1px solid #66CBD9; 
-	min-height: 100px;
-	margin: 10px;
-	position:relative;
-}
-.slick-initialized .slick-slide img{
-	max-width:160px;
-	margin: 0 auto !important;
-	position:absolute;
-	top:50%;
-	transform:translatey(-50%);
-}
-#customer_details .col-1{
-	width:100%;
-}
-.woocommerce-billing-fields__field-wrapper p{
-	display:flex;
-	flex-direction:column
-}
-.woocommerce-billing-fields input{
-	padding: 8px;
-	width:100%;
-}
-#order_review .shop_table{
-	width: 100%;
-}
-.woocommerce-additional-fields{
-	display:none;
+.class-instructor .instructor a:hover {
+  background: #fff;
+  color: #00aec7;
+  border: 1px solid #fff;
 }
 
-.extra_padding .woocommerce{
-	max-width: 600px;
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
 }
-#billing_country_field span.woocommerce-input-wrapper, #billing_state_field span.woocommerce-input-wrapper{
-	padding:12px;
-	border: 1px solid gray;
-	padding-top:4px;
-	padding-left:2px;
+.slick-initialized .slick-slide {
+  border: 1px solid #66cbd9;
+  min-height: 100px;
+  margin: 10px;
+  position: relative;
 }
-.select2-container--default .select2-selection--single, .woocommerce-info{
-	border:none;
+.slick-initialized .slick-slide img {
+  max-width: 160px;
+  margin: 0 auto !important;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
 }
-.woocommerce-billing-fields h3, #order_review_heading{
-	font-family: "Brandon Grotesque Black", Sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-	margin-top:1rem;
-	text-transform: capitalize;
+#customer_details .col-1 {
+  width: 100%;
 }
-.woocommerce-checkout-payment ul{
-	padding-left:0;
-	margin-top:1rem;
+.woocommerce-billing-fields__field-wrapper p {
+  display: flex;
+  flex-direction: column;
 }
-#place_order{
-	    font-family: 'Gilory Light', Sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #00aec7;
-    border: 1px solid #00aec7;
-    padding: 10px 30px;
-    border-radius: 0px;
-    color: #fff;
-    text-align: center;
-		margin-top:1rem;
+.woocommerce-billing-fields input {
+  padding: 8px;
+  width: 100%;
 }
-#place_order:hover{
-	color: #00aec7;
-	border: 1px solid #00aec7;
-	background:transparent;
+#order_review .shop_table {
+  width: 100%;
+}
+.woocommerce-additional-fields {
+  display: none;
+}
+
+.extra_padding .woocommerce {
+  max-width: 600px;
+}
+#billing_country_field span.woocommerce-input-wrapper,
+#billing_state_field span.woocommerce-input-wrapper {
+  padding: 12px;
+  border: 1px solid gray;
+  padding-top: 4px;
+  padding-left: 2px;
+}
+.select2-container--default .select2-selection--single,
+.woocommerce-info {
+  border: none;
+}
+.woocommerce-billing-fields h3,
+#order_review_heading {
+  font-family: 'Brandon Grotesque Black', Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+.woocommerce-checkout-payment ul {
+  padding-left: 0;
+  margin-top: 1rem;
+}
+#place_order {
+  font-family: 'Gilory Light', Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #00aec7;
+  border: 1px solid #00aec7;
+  padding: 10px 30px;
+  border-radius: 0px;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+#place_order:hover {
+  color: #00aec7;
+  border: 1px solid #00aec7;
+  background: transparent;
 }
 
 .training-section .training-cards .card-padding .card-1 {
   height: 450px;
 }
-.single_class .side-img{
-	height: 100% !important;
+.single_class .side-img {
+  height: 100% !important;
 }
-.single_class .side-img img{
-	object-fit: cover !important;
+.single_class .side-img img {
+  object-fit: cover !important;
   height: 100%;
 }
- .single_class .clr{
-	padding-top:2rem;
-	padding-bottom:2rem;
+.single_class .clr {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.pricing-cards .card-1 .para{
-	max-height:120px;
-	overflow-y:scroll;
+.pricing-cards .card-1 .para {
+  max-height: 120px;
+  overflow-y: scroll;
 }
-.training-cards .card-1 .para{
-	max-height: 280px;
-	overflow-y: scroll
+.training-cards .card-1 .para {
+  max-height: 280px;
+  overflow-y: scroll;
 }
 .card-1 .para::-webkit-scrollbar {
   width: 2px;
@@ -940,17 +941,18 @@ div.healcode {
   max-width: 135px !important;
   min-height: 135px;
 }
-.training-section .training-cards .card-padding .card-1 h2{
+.training-section .training-cards .card-padding .card-1 h2 {
   min-height: 75px;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
+  text-transform: uppercase;
 }
-.training-section .training-cards .card-padding .card-1 .para P{
+.training-section .training-cards .card-padding .card-1 .para P {
   min-height: 260px;
 }
 
-
-.teacher_traning_child_content{
-	max-height: 280px;
-	overflow-y: scroll
+.teacher_traning_child_content {
+  max-height: 280px;
+  overflow-y: scroll;
 }
 .teacher_traning_child_content::-webkit-scrollbar {
   width: 2px;
@@ -959,32 +961,32 @@ div.healcode {
 .teacher_traning_child_content::-webkit-scrollbar-thumb {
   background: #f1f1f1;
 }
-.footer_menu .mob-block{
-	display: none !important;
+.footer_menu .mob-block {
+  display: none !important;
 }
-.footer_menu ul#menu-footer-menu{
-	display: flex;
-	padding-left:0 !important
+.footer_menu ul#menu-footer-menu {
+  display: flex;
+  padding-left: 0 !important;
 }
-.epl_events div.faqscat:nth-child(2n) .graySec{
-  background: #66CBD9 !important;
+.epl_events div.faqscat:nth-child(2n) .graySec {
+  background: #66cbd9 !important;
 }
-div.healcode.appointments a.hc-button{
-  background: #66CBD9 !important;
+div.healcode.appointments a.hc-button {
+  background: #66cbd9 !important;
 }
-.accordion-item ul li{
-	list-style: disc;
+.accordion-item ul li {
+  list-style: disc;
 }
-.our-studios .images .heading{
+.our-studios .images .heading {
   width: 200px !important;
 }
-div.healcode.appointments a.hc-button{
-	border:1px solid #66CBD9;
+div.healcode.appointments a.hc-button {
+  border: 1px solid #66cbd9;
 }
-div.healcode.appointments a.hc-button:hover{
-	background: transparent !important;
-	border:1px solid #66CBD9;
-	color: #66CBD9 !important;
+div.healcode.appointments a.hc-button:hover {
+  background: transparent !important;
+  border: 1px solid #66cbd9;
+  color: #66cbd9 !important;
 }
 /* .training-cards{
   max-height: 567px;
@@ -993,18 +995,6 @@ div.healcode.appointments a.hc-button:hover{
 #tr-load-more{
   cursor: pointer;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
@@ -1032,7 +1022,7 @@ div.healcode.appointments a.hc-button:hover{
 }
 
 @media screen and (min-width: 1040px) {
-  .pricing-section .pricing-cards .card-padding .card-1 h3{
+  .pricing-section .pricing-cards .card-padding .card-1 h3 {
     min-height: 62px;
   }
 }
