@@ -17,6 +17,9 @@ get_header();
 $last_content = get_field('last_content');
 $teacher_inner_page_video = get_field('teacher_inner_page_video');
 
+$hide_last_block = get_field('hide_last_block');
+echo $hide_last_block;
+
 
 $count_blue = 0;
 $count_white = 0;
@@ -93,8 +96,9 @@ $count_white = 0;
   <?php endwhile; ?>
 <?php endif; ?>
 
+<?php if ($hide_last_block == 'No') { ?>
 
-<div class="class-detail-2">
+  <div class="class-detail-2">
   <div class="row g-0">
     <div class="col-md-6 left">
       <div class="padding" style="padding: 3rem;">
@@ -110,6 +114,10 @@ $count_white = 0;
     </div>
   </div>
 </div>
+  
+  
+  <?php } ?>
+
 
 
 
