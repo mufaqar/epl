@@ -80,7 +80,7 @@ $count_white = 0;
               <img src="<?php the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index ?>">
             </div>
           </div>
-          <div class="col-md-6 clr">
+          <div class="col-md-6 clr ssg_ul">
             <div class="padding">
               <h1><?php the_sub_field('title'); ?></h1>
               <div class="teacher_traning_child_content">
@@ -98,13 +98,13 @@ $count_white = 0;
 
   <div class="class-detail-2">
   <div class="row g-0">
-    <div class="col-md-6 left">
+    <div class="col-md-6 left ssg_ul">
       <div class="padding" style="padding: 3rem;">
         <h1><?php echo $last_content['left_heading']; ?></h1>
         <p><?php echo $last_content['left_content']; ?></p>
       </div>
     </div>
-    <div class="col-md-6 clr" style="padding: 3rem;">
+    <div class="col-md-6 clr ssg_ul" style="padding: 3rem;">
       <div class="padding">
         <h1><?php echo $last_content['right_heading']; ?></h1>
         <p><?php echo $last_content['right_content']; ?></p>
@@ -165,6 +165,8 @@ $count_white = 0;
   .pt-pb {
     margin: 2.5rem auto !important;
   }
+
+ 
 </style>
 
 
