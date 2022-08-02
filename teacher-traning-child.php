@@ -33,9 +33,13 @@ $count_white = 0;
     <div class="container">
       <div class="new-offer padding">
         <div class="title ">
-          <div class="embed-responsive embed-responsive-1by1 padding">
-            <iframe class="embed-responsive-item" src="<?php echo $teacher_inner_page_video; ?>" width="560" height="315"></iframe>
-          </div>
+         
+          <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="<?php echo $teacher_inner_page_video; ?>"></iframe>
+                </div>
+
+
+
         </div>
       </div>
     </div>

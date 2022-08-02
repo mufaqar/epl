@@ -47,16 +47,14 @@ $index = get_row_index();
 
                 </script>
 
-        <script type="text/javascript">
+<script type="text/javascript">
 
-                //jQuery in WordPress
-                jQuery(function($){
+//jQuery in WordPress
+jQuery(function($){
 
-                        $(".longcontent_<?php echo $index?>").hide();
-                                $("#showlong_<?php echo $index?>").click(function()
-                                {
-                                        
-                                
+        $(".longcontent_<?php echo $index?>").hide();
+                                $("#showlong_<?php echo $index?>").click(function(){
+                                     
                                 $(".longcontent_<?php echo $index?>" ).show();
                                 $(".shortcontent_<?php echo $index?>").hide();   
                                 $(".card_img<?php echo $index?>").css("height","100%");
@@ -66,8 +64,8 @@ $index = get_row_index();
                                 $(".shortcontent_<?php echo $index?>").show();
                                 $(".card_img<?php echo $index?>").css("height","360px");
                                 });
-
-                
-                });
-        </script>
+   
+    
+});
+</script>
 
