@@ -18,8 +18,6 @@ $last_content = get_field('last_content');
 $teacher_inner_page_video = get_field('teacher_inner_page_video');
 
 $hide_last_block = get_field('hide_last_block');
-echo $hide_last_block;
-
 
 $count_blue = 0;
 $count_white = 0;
