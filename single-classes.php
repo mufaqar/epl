@@ -50,8 +50,8 @@ $tp = get_template_directory_uri();
               <div class="col-md-6 clr">
               <div class="padding">
               <h1><?php  the_sub_field('title'); ?></h1>  
-                    
-              <?php get_template_part('template-parts/shortlong')?>
+              <div ><?php the_sub_field('short_info'); ?></div>      
+              
               </div>
               </div>
               <div class="col-md-6">
@@ -67,13 +67,12 @@ $tp = get_template_directory_uri();
                   <div class="row g-0">
                     <div class="col-md-6">
                       <div class="side-img">
-                      <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
                       </div>
                     </div>
                     <div class="col-md-6 clr">
                     <div class="padding">
                     <h1><?php  the_sub_field('title'); ?></h1>                     
-                    <?php get_template_part('template-parts/shortlong')?>
+                    <div class="class_inner_short"><?php the_sub_field('short_info'); ?></div> 
                     </div>
                   </div>
             </div>

@@ -1006,6 +1006,37 @@ div.healcode.appointments a.hc-button:hover {
 #tr-load-more{
   cursor: pointer;
 } */
+.single_class .clr {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 500px;
+}
+ol li{
+ list-style-type: circle !important;
+}
+.epl_events .card-body>p{
+	max-height: 120px;
+	min-height: 120px;
+	overflow-y: scroll;
+}
+.epl_events .card-body>p::-webkit-scrollbar {
+  width: 2px;
+}
+.epl_events .card-body>p::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+.class_inner_short{
+	max-height: 250px;
+	min-height: 250px;
+	overflow-y: scroll;
+}
+.class_inner_short::-webkit-scrollbar {
+  width: 2px;
+}
+.class_inner_short::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
