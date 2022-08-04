@@ -248,3 +248,9 @@ function bbloomer_only_one_in_cart( $passed, $added_product_id ) {
    wc_empty_cart();
    return $passed;
 }
+
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+   add_theme_support( 'woocommerce' );
+}    
