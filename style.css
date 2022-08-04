@@ -1006,6 +1006,7 @@ div.healcode.appointments a.hc-button:hover {
 #tr-load-more{
   cursor: pointer;
 } */
+
 .single_class .clr {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1027,7 +1028,6 @@ ol li{
 }
 .class_inner_short{
 	max-height: 250px;
-	min-height: 250px;
 	overflow-y: scroll;
 }
 .class_inner_short::-webkit-scrollbar {

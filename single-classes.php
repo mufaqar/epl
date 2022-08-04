@@ -67,6 +67,7 @@ $tp = get_template_directory_uri();
                   <div class="row g-0">
                     <div class="col-md-6">
                       <div class="side-img">
+                        <img src="<?php  the_sub_field('image'); ?>" alt="trainer" class="card_img<?php echo $index?>">
                       </div>
                     </div>
                     <div class="col-md-6 clr">
