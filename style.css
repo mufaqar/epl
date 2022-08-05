@@ -2,7 +2,7 @@
 Theme URI: http://mufaqar.com 
 Author URI: https://mufaqar.com
 Description: Description 
-Version: 1.2.1
+Version: 1.3.1
  Text Domain: epl-theme */
 .class-detail-1 img {
   height: auto !important;
@@ -863,7 +863,7 @@ div.healcode {
 }
 
 .extra_padding .woocommerce {
-  max-width: 600px;
+  max-width: 100%;
 }
 #billing_country_field span.woocommerce-input-wrapper,
 #billing_state_field span.woocommerce-input-wrapper {
@@ -1012,23 +1012,23 @@ div.healcode.appointments a.hc-button:hover {
   padding-bottom: 2rem;
   min-height: 500px;
 }
-ol li{
- list-style-type: circle !important;
+ol li {
+  list-style-type: circle !important;
 }
-.epl_events .card-body>p{
-	max-height: 120px;
-	min-height: 120px;
-	overflow-y: scroll;
+.epl_events .card-body > p {
+  max-height: 120px;
+  min-height: 120px;
+  overflow-y: scroll;
 }
-.epl_events .card-body>p::-webkit-scrollbar {
+.epl_events .card-body > p::-webkit-scrollbar {
   width: 2px;
 }
-.epl_events .card-body>p::-webkit-scrollbar-thumb {
+.epl_events .card-body > p::-webkit-scrollbar-thumb {
   background: #f1f1f1;
 }
-.class_inner_short{
-	max-height: 250px;
-	overflow-y: scroll;
+.class_inner_short {
+  max-height: 250px;
+  overflow-y: scroll;
 }
 .class_inner_short::-webkit-scrollbar {
   width: 2px;
@@ -1037,12 +1037,12 @@ ol li{
   background: #f1f1f1;
 }
 .single_class .side-img img {
-	height: 500px !important;
+  height: 500px !important;
 }
 
-.last_content{
-	max-height: 250px;
-	overflow-y: scroll;
+.last_content {
+  max-height: 250px;
+  overflow-y: scroll;
 }
 .last_content::-webkit-scrollbar {
   width: 2px;
@@ -1050,13 +1050,21 @@ ol li{
 .last_content::-webkit-scrollbar-thumb {
   background: #f1f1f1;
 }
-.last_content ul{
-	    display: flex;
-    flex-direction: column;
-    align-items: center;
+.last_content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Woo Styles */
 
+.checkout-button {
+  font-family: 'Gilory Light', Sans-serif;
+  background-color: #00aec7 !important;
+  border-radius: 0px 0px 0px 0px;
+  padding: 10px 25px 8px 25px;
+  border: none;
+}
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
