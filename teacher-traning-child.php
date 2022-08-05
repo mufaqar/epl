@@ -101,13 +101,13 @@ $count_white = 0;
     <div class="col-md-6 left ssg_ul">
       <div class="padding" style="padding: 3rem;">
         <h1><?php echo $last_content['left_heading']; ?></h1>
-        <p><?php echo $last_content['left_content']; ?></p>
+        <div class="last_content"><p><?php echo $last_content['left_content']; ?></p></div>
       </div>
     </div>
     <div class="col-md-6 clr ssg_ul" style="padding: 3rem;">
       <div class="padding">
         <h1><?php echo $last_content['right_heading']; ?></h1>
-        <p><?php echo $last_content['right_content']; ?></p>
+        <div class="last_content"><p><?php echo $last_content['right_content']; ?></p></div>
       </div>
     </div>
   </div>

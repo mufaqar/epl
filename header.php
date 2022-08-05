@@ -1,45 +1,46 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package CT_Custom
- */
 
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<?php if (is_search()) { ?>
+	   <meta name="robots" content="noindex, nofollow" /> 
+	<?php } ?>
+		<title>
+			<?php
+				/*
+				 * Print the <title> tag based on what is being viewed.
+				 */
+				global $page, $paged, $post;
+			
+				wp_title( '|', true, 'right' );
+			
+				// Add the blog name.
+				bloginfo( 'name' );
+			
+				// Add the blog description for the home/front page.
+				$site_description = get_bloginfo( 'description', 'display' );
+				if ( $site_description && ( is_home() || is_front_page() ) )
+					echo " | $site_description";
+			
+				// Add a page number if necessary:
+				if ( $paged >= 2 || $page >= 2 )
+					echo ' | ' . sprintf( __( 'Page %s', 'wpv' ), max( $paged, $page ) );
+            ?>
+	</title>
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    
-	
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 	<?php wp_head(); ?>
 </head>
-
-<?php
-	/*	global $data;
-
-		$company_logo = $data['company_logo'];
-		$company_favicon = $data['company_favicon'];
-		$header_tell = $data['header_tell']; 
-
-        $header_tell = $data['header_tell']; 
-
-        $login_info = $data['login_info'];  */
-	?>
-
 <body <?php body_class(); ?>>
 <div id="page" class="site">	
     <header class="header headermain mt-0">

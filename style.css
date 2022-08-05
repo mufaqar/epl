@@ -1036,6 +1036,26 @@ ol li{
 .class_inner_short::-webkit-scrollbar-thumb {
   background: #f1f1f1;
 }
+.single_class .side-img img {
+	height: 500px !important;
+}
+
+.last_content{
+	max-height: 250px;
+	overflow-y: scroll;
+}
+.last_content::-webkit-scrollbar {
+  width: 2px;
+}
+.last_content::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+.last_content ul{
+	    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {

@@ -50,7 +50,7 @@ $tp = get_template_directory_uri();
               <div class="col-md-6 clr">
               <div class="padding">
               <h1><?php  the_sub_field('title'); ?></h1>  
-              <div ><?php the_sub_field('short_info'); ?></div>      
+              <div class="class_inner_short"><?php the_sub_field('short_info'); ?></div>      
               
               </div>
               </div>
