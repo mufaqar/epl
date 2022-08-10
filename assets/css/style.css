@@ -7,19 +7,19 @@
 }
 
 @font-face {
-  font-family: "Brandon Grotesque Black";
+  font-family: 'Brandon Grotesque Black';
   src: url(../fonts/brandongrotesque-black.otf);
 }
 @font-face {
-  font-family: "Gotham Book";
+  font-family: 'Gotham Book';
   src: url(../fonts/Gotham-Book.otf);
 }
 @font-face {
-  font-family: "Gilory Light";
+  font-family: 'Gilory Light';
   src: url(../fonts/Gilroy-Light.otf);
 }
 @font-face {
-  font-family: "SF-Pro";
+  font-family: 'SF-Pro';
   src: url(../fonts/SF-Pro.ttf);
 }
 .padding {
@@ -39,7 +39,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: #00AEC7;
+  color: #00aec7;
 }
 
 select {
@@ -47,9 +47,11 @@ select {
   -moz-appearance: none;
   appearance: none;
   /* Some browsers will not display the caret when using calc, so we put the fallback first */
-  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important;
+  background: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png')
+    white no-repeat 98.5% !important;
   /* !important used for overriding all other customisations */
-  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(100% - 15px) !important;
+  background: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png')
+    white no-repeat calc(100% - 15px) !important;
   /* Better placement regardless of input width */
 }
 
@@ -108,7 +110,7 @@ button {
   color: #221f1f;
 }
 .header .navbar .top-menu-wrapper::before {
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   right: 0;
@@ -117,7 +119,7 @@ button {
   transition: background 0.5s;
 }
 .header .navbar .open-mobile-menu i {
-  color: #00AEC7;
+  color: #00aec7;
   font-size: 25px;
 }
 .header .navbar .top-menu {
@@ -150,16 +152,16 @@ button {
 }
 .header .navbar ul a {
   display: inline-block;
-  color: #53565A;
+  color: #53565a;
   font-size: 27px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   transition: color 0.35s ease-out;
 }
 .header .navbar ul a:hover {
-  color: #00AEC7;
+  color: #00aec7;
 }
 .header .navbar .has-dropdown i {
   display: none;
@@ -184,7 +186,7 @@ button {
   margin-bottom: 2rem;
 }
 .header .navbar .top-menu .mob-block i {
-  color: #ACACAC !important;
+  color: #acacac !important;
   font-size: 25px;
   margin-left: 3px;
 }
@@ -192,8 +194,8 @@ button {
 .number {
   margin-left: 70px;
   text-align: left;
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -220,10 +222,10 @@ button {
   text-align: end;
 }
 .sign-up .btn-primary {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 12px;
   font-weight: 500;
-  background-color: #00AEC7;
+  background-color: #00aec7;
   border-radius: 0px 0px 0px 0px;
   padding: 10px 25px 8px 25px;
   border: none;
@@ -263,7 +265,7 @@ button {
   padding: 4% 0% 0% 0%;
 }
 .main-banner .banner-content .banner-btn .btn-border {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -277,13 +279,13 @@ button {
 }
 
 .exhale-pilates {
-  background-color: #00AEC7;
+  background-color: #00aec7;
   padding: 6% 0% 6% 0%;
 }
 .exhale-pilates .welcome-text h1 {
   max-width: 410px;
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 66px;
   font-weight: 600;
 }
@@ -310,12 +312,11 @@ button {
   }
 }
 .exhale-pilates .para P {
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 400;
   text-align: justify;
- 
 }
 @media screen and (max-width: 1024px) {
   .exhale-pilates .para P {
@@ -349,7 +350,7 @@ button {
   width: 130px;
 }
 .exhale-pilates .time-class .btn-buy a {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 11.84px;
   font-weight: 500;
   text-transform: uppercase;
@@ -374,8 +375,8 @@ button {
   padding: 4% 0% 2% 0%;
 }
 .our-studios .title h2 {
-  color: #53565A;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #53565a;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 37px;
   font-weight: 600;
   margin: 0px;
@@ -393,7 +394,7 @@ button {
   height: 310px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .our-studios .images .heading {
   position: absolute;
@@ -401,7 +402,7 @@ button {
   right: 0px;
   text-align: center;
   width: 190px !important;
-  background: #CECDCD;
+  background: #cecdcd;
   padding: 20px 10px;
   bottom: 50px;
   cursor: pointer;
@@ -409,13 +410,13 @@ button {
 .our-studios .images .heading P {
   margin-bottom: 0px;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 300;
 }
 
 .our-classes {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   padding: 0% 0% 6% 0%;
 }
 .our-classes .title {
@@ -424,7 +425,7 @@ button {
 }
 .our-classes .title h1 {
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 37px;
   font-weight: 600;
   padding: 4% 0% 0% 0%;
@@ -440,7 +441,7 @@ button {
   margin: 0 auto;
   text-align: center;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 400;
 }
@@ -448,7 +449,7 @@ button {
   padding: 0% 0% 2% 0%;
 }
 .our-classes .upcoming-course button {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 14.49px;
   font-weight: 300;
   text-transform: uppercase;
@@ -474,20 +475,19 @@ button {
 }
 .our-classes .padding .hover-img {
   position: relative;
- 
 }
 .our-classes .padding .hover-img img {
   width: 100%;
   height: 320px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0.9;
   filter: brightness(0.7);
   margin-bottom: 8px;
 }
 .our-classes .padding .hover-img h5 {
-  color: #FFFFFF;
-  font-family: "Gotham Bold", Sans-serif;
+  color: #ffffff;
+  font-family: 'Gotham Bold', Sans-serif;
   font-size: 15.15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -526,7 +526,7 @@ button {
   padding: 30px;
 }
 .our-classes .padding .hover-img:hover .content P {
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -544,7 +544,7 @@ button {
   padding: 3% 0% 1% 0%;
   margin-bottom: 20px;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 25px;
   font-weight: 300;
 }
@@ -554,7 +554,8 @@ button {
   max-height: 250px;
   margin: 0 auto;
 }
-.recommended-by .slick-prev:before, .recommended-by .slick-next:before {
+.recommended-by .slick-prev:before,
+.recommended-by .slick-next:before {
   color: #00aec7 !important;
 }
 
@@ -579,12 +580,12 @@ button {
   }
 }
 .class-instructor .class a {
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
   background-color: rgba(97, 206, 112, 0);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -614,12 +615,12 @@ button {
   }
 }
 .class-instructor .instructor a {
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
   background-color: rgba(97, 206, 112, 0);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -659,8 +660,8 @@ button {
   margin: 0 auto;
 }
 .pricing-banner .banner-content h1 {
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 62px;
   font-weight: 600;
 }
@@ -673,8 +674,8 @@ button {
   max-width: 435px !important;
   margin: 0 auto;
   text-align: center;
-  color: #FFFFFF;
-  font-family: "Gotham Book", Sans-serif;
+  color: #ffffff;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.5px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -683,7 +684,7 @@ button {
   padding: 4% 0% 0% 0%;
 }
 .pricing-banner .banner-content .banner-btn .btn-border {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 14.49px;
   font-weight: 500;
   text-transform: uppercase;
@@ -710,25 +711,25 @@ button {
   padding: 10px;
 }
 .pricing-section .filter .searchBoxMain select {
-  border: 1px solid #A6A6A6;
+  border: 1px solid #a6a6a6;
   padding: 0px 10px;
   width: 371px;
   height: 47px;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
 }
 .pricing-section .filter .searchBoxMain select:focus-visible {
   outline: none;
 }
 .pricing-section .filter .searchBoxMain button {
-  background: #00AEC7 !important;
+  background: #00aec7 !important;
   text-transform: uppercase;
   padding: 3px 5px;
   color: white;
   font-size: 14.49px;
   width: 110px;
   height: 30px;
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
 }
 .pricing-section .new-offer .title {
   text-align: center;
@@ -736,7 +737,7 @@ button {
 }
 .pricing-section .new-offer .title h1 {
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 37px;
   font-weight: 600;
   padding: 0% 0% 4% 0%;
@@ -762,13 +763,13 @@ button {
 .pricing-section .pricing-cards .card-padding .card-1 h2 {
   margin-bottom: 20px;
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 56.9px;
   font-weight: 600;
 }
 .pricing-section .pricing-cards .card-padding .card-1 h3 {
-  color: #FFFFFF;
-  font-family: "Roboto", Sans-serif;
+  color: #ffffff;
+  font-family: 'Roboto', Sans-serif;
   font-size: 26.96px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -779,21 +780,21 @@ button {
 }
 .pricing-section .pricing-cards .card-padding .card-1 .para P {
   text-align: center;
-  color: #FFFFFF;
-  font-family: "Gotham Book", Sans-serif;
+  color: #ffffff;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 12.38px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 .pricing-section .pricing-cards .card-padding .card-1 .btn-buy {
   color: #53565a;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 0px 0px 0px 0px;
   padding: 12px 24px;
   line-height: 10px;
 }
 .pricing-section .pricing-cards .card-padding .card-1 .btn-buy a {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 11.84px;
   font-weight: 500;
   text-transform: uppercase;
@@ -801,10 +802,10 @@ button {
   fill: #53565a;
 }
 .pricing-section .pricing-cards .card-padding .card-2 {
-  background-color: #ACACAC !important;
+  background-color: #acacac !important;
 }
 .pricing-section .pricing-cards .card-padding .card-3 {
-  background-color: #A3E2EB;
+  background-color: #a3e2eb;
 }
 
 .class-schedule {
@@ -817,11 +818,11 @@ button {
 .class-schedule .fields-section select {
   padding: 0px 10px;
   width: 100%;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   border: none !important;
   height: 43px;
-  color: #53565A;
+  color: #53565a;
 }
 .class-schedule .fields-section select:focus-visible {
   outline: none;
@@ -846,8 +847,8 @@ button {
   padding: 0% 0% 4% 0%;
 }
 .class-schedule .tabel-date h3 {
-  color: #53565A;
-  font-family: "Gotham Medium", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Medium', Sans-serif;
   font-size: 26.96px;
   font-weight: 600;
 }
@@ -882,17 +883,17 @@ button {
   background-color: white;
 }
 .class-schedule .table-section .table-wrapper .fl-table thead {
-  border-left: 23px solid #00AEC7;
-  border-right: 23px solid #00AEC7;
+  border-left: 23px solid #00aec7;
+  border-right: 23px solid #00aec7;
 }
 .class-schedule .table-section .table-wrapper .fl-table thead tr {
   border: none;
 }
 .class-schedule .table-section .table-wrapper .fl-table thead th {
   color: #ffffff;
-  background: #00AEC7;
+  background: #00aec7;
   font-size: 15px;
-  font-family: "Gotham Bold", Sans-serif;
+  font-family: 'Gotham Bold', Sans-serif;
   font-weight: 500;
 }
 .class-schedule .table-section .table-wrapper .fl-table th {
@@ -905,8 +906,8 @@ button {
   text-align: start;
   padding: 15px 30px;
   font-size: 13.87px;
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
 }
 .class-schedule .table-section .table-wrapper .fl-table td button {
   border: 1px solid #929292;
@@ -924,7 +925,7 @@ button {
 }
 .class-schedule .table-section .table-wrapper .fl-table tr {
   padding: 10px 0px;
-  border-bottom: 1px solid #ACACAC;
+  border-bottom: 1px solid #acacac;
 }
 .class-schedule .table-section .table-wrapper tr:last-child {
   border-bottom: none;
@@ -952,8 +953,8 @@ button {
   margin: 0 auto;
 }
 .faqs-banner .banner-content h1 {
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 62px;
   font-weight: 600;
 }
@@ -983,13 +984,13 @@ button {
   font-weight: 500;
   padding: 2rem 3.5rem;
   margin: 0;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 20px;
   cursor: pointer;
 }
 .faqHead .box a:hover {
-  border: 1px solid #A3E2EB;
-  background-color: #A3E2EB;
+  border: 1px solid #a3e2eb;
+  background-color: #a3e2eb;
   color: white;
 }
 
@@ -1002,14 +1003,14 @@ button {
   padding: 5rem 0;
 }
 .faqs-accordion .ColorSec {
-  background-color: #00AEC7;
+  background-color: #00aec7;
   padding: 5rem 0;
 }
 .faqs-accordion .ColorSec .accordion-section h1 {
   color: white;
 }
 .faqs-accordion .accordion-section h1 {
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1026,7 +1027,7 @@ button {
   color: #53565a;
   background-color: white;
   box-shadow: none;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 17px;
   font-weight: 300;
 }
@@ -1034,12 +1035,12 @@ button {
   color: #53565a;
   background-color: white;
   box-shadow: none;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 17px;
   font-weight: 300;
 }
 .faqs-accordion .accordion-section .accordion-body {
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -1069,8 +1070,8 @@ button {
   margin: 0 auto;
 }
 .teacher-training-banner .banner-content h1 {
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 62px;
   font-weight: 600;
 }
@@ -1083,8 +1084,8 @@ button {
   max-width: 435px !important;
   margin: 0 auto;
   text-align: center;
-  color: #FFFFFF;
-  font-family: "Gotham Book", Sans-serif;
+  color: #ffffff;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.5px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -1093,7 +1094,7 @@ button {
   padding: 4% 0% 0% 0%;
 }
 .teacher-training-banner .banner-content .banner-btn .btn-border {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 14.49px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1112,7 +1113,7 @@ button {
 }
 .training-section .new-offer .title h1 {
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 37px;
   font-weight: 600;
   padding: 4% 0% 0% 0%;
@@ -1128,7 +1129,7 @@ button {
   margin: 0 auto;
   text-align: center;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 400;
 }
@@ -1151,7 +1152,7 @@ button {
 .training-section .training-cards .card-padding .card-1 h2 {
   padding-bottom: 20px;
   color: #53565a;
-  font-family: "Roboto", Sans-serif;
+  font-family: 'Roboto', Sans-serif;
   font-size: 26px;
   font-weight: 600;
   line-height: 35px;
@@ -1165,8 +1166,8 @@ button {
 }
 .training-section .training-cards .card-padding .card-1 .para P {
   text-align: center;
-  color: #FFFFFF;
-  font-family: "Gotham Book", Sans-serif;
+  color: #ffffff;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 12.38px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -1178,7 +1179,7 @@ button {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 11.84px;
   font-weight: 200;
   background-color: rgba(97, 206, 112, 0);
@@ -1193,10 +1194,10 @@ button {
   color: white;
 }
 .training-section .training-cards .card-padding .card-2 {
-  background-color: #ACACAC !important;
+  background-color: #acacac !important;
 }
 .training-section .training-cards .card-padding .card-3 {
-  background-color: #A3E2EB;
+  background-color: #a3e2eb;
 }
 
 .arrow-down {
@@ -1207,7 +1208,7 @@ button {
   padding: 0% 0% 4% 0%;
 }
 .upcoming-course button {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 14.49px;
   font-weight: 300;
   text-transform: uppercase;
@@ -1251,8 +1252,8 @@ button {
   margin: 0 auto;
 }
 .contact-banner .banner-content h1 {
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 62px;
   font-weight: 600;
 }
@@ -1263,13 +1264,13 @@ button {
 }
 
 .primrose-hill {
-  background-color: #00AEC7;
+  background-color: #00aec7;
   padding: 6% 0% 6% 0%;
 }
 .primrose-hill .welcome-text h1 {
   max-width: 446px;
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 66px;
   font-weight: 600;
 }
@@ -1300,8 +1301,8 @@ button {
   }
 }
 .primrose-hill .para P {
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 400;
   width: 74%;
@@ -1339,7 +1340,7 @@ button {
   width: 130px;
 }
 .primrose-hill .time-class .btn-buy a {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 11.84px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1364,14 +1365,14 @@ button {
   padding: 3% 0% 4% 0%;
 }
 .address .find-us h2 {
-  color: #53565A;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #53565a;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 37px;
   font-weight: 600;
 }
 .address .address-map .heading h3 {
-  color: #53565A;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #53565a;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1379,7 +1380,7 @@ button {
 }
 .address .address-map .heading p {
   color: #53565a;
-  font-family: "SF-Pro", Sans-serif;
+  font-family: 'SF-Pro', Sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 27px;
@@ -1412,8 +1413,8 @@ button {
   margin: 0 auto;
 }
 .class-detail-banner .banner-content h1 {
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 62px;
   font-weight: 600;
 }
@@ -1430,20 +1431,20 @@ button {
   width: 100%;
   height: 375px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .class-detail-1 p {
   max-width: 356px;
   margin: 0 auto;
   text-align: center;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 400;
 }
 
 .class-detail-2 .clr {
-  background-color: #A3E2EB;
+  background-color: #a3e2eb;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1457,7 +1458,7 @@ button {
 .class-detail-2 .clr h1 {
   padding: 0% 0% 4% 0%;
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 33px;
   font-weight: 600;
   margin: 0;
@@ -1467,7 +1468,7 @@ button {
   margin: 0 auto;
   text-align: center;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
 }
 .class-detail-2 .clr img {
@@ -1478,7 +1479,7 @@ button {
   height: 400px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 767px) {
   .class-detail-2 .side-img img {
@@ -1501,17 +1502,15 @@ button {
 .class-detail-3 .clr h1 {
   padding: 0% 0% 4% 0%;
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 33px;
   font-weight: 600;
   margin: 0;
 }
 .class-detail-3 .clr p {
-  max-width: 356px;
-  margin: 0 auto;
   text-align: center;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
 }
 .class-detail-3 .clr img {
@@ -1522,7 +1521,7 @@ button {
   height: 400px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 767px) {
   .class-detail-3 .side-img img {
@@ -1532,7 +1531,7 @@ button {
 
 .class-detail-4 .clr {
   padding: 3% 0% 3% 0%;
-  background-color: #A3E2EB;
+  background-color: #a3e2eb;
 }
 @media screen and (max-width: 768px) {
   .class-detail-4 .clr .padding {
@@ -1542,7 +1541,7 @@ button {
 .class-detail-4 .clr h1 {
   padding: 0% 0% 4% 0%;
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 33px;
   font-weight: 600;
   margin: 0;
@@ -1560,7 +1559,7 @@ button {
 }
 .class-detail-4 .clr .center-align p {
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
 }
 .class-detail-4 .clr .center-align ul li {
@@ -1568,7 +1567,7 @@ button {
   margin-bottom: 10px;
   text-align: left;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 400;
 }
@@ -1584,7 +1583,7 @@ button {
 .class-detail-4 .white h1 {
   padding: 0% 0% 4% 0%;
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 33px;
   font-weight: 600;
   margin: 0;
@@ -1612,7 +1611,7 @@ button {
 }
 .class-detail-4 .white .center-align p {
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
 }
 .class-detail-4 .white .center-align ul li {
@@ -1620,7 +1619,7 @@ button {
   margin-bottom: 10px;
   text-align: left;
   color: #53565a;
-  font-family: "Gotham Book", Sans-serif;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
   font-weight: 400;
 }
@@ -1632,7 +1631,7 @@ button {
 .testimonial .title h1 {
   padding: 2% 2% 2% 2%;
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 37px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1641,7 +1640,7 @@ button {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 767px) {
   .testimonial img {
@@ -1653,11 +1652,11 @@ button {
   text-align: center;
 }
 .testimonial .enroll a {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 21px;
   font-weight: 300;
   text-transform: uppercase;
-  background-color: #00AEC7;
+  background-color: #00aec7;
   border-radius: 0px 0px 0px 0px;
   padding: 1% 2% 1% 2%;
   color: white;
@@ -1665,7 +1664,7 @@ button {
 }
 
 .team-banner {
-  background-color: #00AEC7;
+  background-color: #00aec7;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1686,8 +1685,8 @@ button {
   margin: 0 auto;
 }
 .team-banner .banner-content h1 {
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  color: #ffffff;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 62px;
   font-weight: 600;
 }
@@ -1700,25 +1699,25 @@ button {
   max-width: 435px !important;
   margin: 0 auto;
   text-align: center;
-  color: #FFFFFF;
-  font-family: "Gotham Book", Sans-serif;
+  color: #ffffff;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15.5px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .team-members .light-clr-gray {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   height: 500px;
   position: relative;
 }
 .team-members .medium-clr-gray {
-  background-color: #DFDFDF;
+  background-color: #dfdfdf;
   height: 500px;
   position: relative;
 }
 .team-members .dark-clr-gray {
-  background-color: #C5C5C5;
+  background-color: #c5c5c5;
   height: 500px;
   position: relative;
 }
@@ -1732,7 +1731,7 @@ button {
 }
 .team-members .member a {
   cursor: pointer;
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 21px;
   font-weight: 300;
   color: #929292;
@@ -1745,7 +1744,7 @@ button {
 
 .member-detail {
   padding: 5% 0% 5% 0%;
-  background: #EBEBEB;
+  background: #ebebeb;
 }
 .member-detail .member-img {
   text-align: center;
@@ -1754,17 +1753,17 @@ button {
   max-width: 325px;
   height: 390px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .member-detail h1 {
   color: #53565a;
-  font-family: "Brandon Grotesque Black", Sans-serif;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
   font-size: 33px;
   margin-bottom: 7px;
 }
 .member-detail h3 {
   color: #53565a;
-  font-family: "Gotham Medium", Sans-serif;
+  font-family: 'Gotham Medium', Sans-serif;
   font-size: 16px;
   margin-bottom: 7px;
 }
@@ -1774,8 +1773,8 @@ button {
 .member-detail .member-width p {
   padding: 4% 0% 0% 0%;
   text-align: left;
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 15px;
   font-weight: 400;
   margin: 0;
@@ -1784,11 +1783,11 @@ button {
   padding: 4% 0% 0% 0%;
 }
 .member-detail .member-width .member-btn a {
-  font-family: "Gilory Light", Sans-serif;
+  font-family: 'Gilory Light', Sans-serif;
   font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
-  background-color: #CECDCD;
+  background-color: #cecdcd;
   border-radius: 0px 0px 0px 0px;
   padding: 1% 3% 1% 3%;
   color: white;
@@ -1819,16 +1818,16 @@ button {
   margin-top: 30px;
 }
 .footer-banner .footer-content .content-1 p {
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 12px;
   letter-spacing: 0px;
   margin: 0;
   line-height: 10px;
 }
 .footer-banner .footer-content .content-1 a {
-  color: #00AEC7;
-  font-family: "Gotham Book", Sans-serif;
+  color: #00aec7;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -1836,16 +1835,16 @@ button {
   margin-top: 20px;
 }
 .footer-banner .footer-content .content-2 p {
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 12px;
   letter-spacing: 0px;
   margin: 0;
   line-height: 10px;
 }
 .footer-banner .footer-content .content-2 a {
-  color: #00AEC7;
-  font-family: "Gotham Book", Sans-serif;
+  color: #00aec7;
+  font-family: 'Gotham Book', Sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -1854,7 +1853,7 @@ button {
 }
 .footer-banner .footer-content .content-3 a {
   color: #53565a;
-  font-family: "SF-Pro", Sans-serif;
+  font-family: 'SF-Pro', Sans-serif;
   font-size: 13px;
   font-weight: 500;
 }
@@ -1866,7 +1865,7 @@ button {
   padding: 0px;
   font-size: 8px;
   font-weight: 400 !important;
-  color: #53565A;
+  color: #53565a;
   margin-right: 20px;
-  font-family: "Gotham Book", Sans-serif;
-}/*# sourceMappingURL=style.css.map */
+  font-family: 'Gotham Book', Sans-serif;
+} /*# sourceMappingURL=style.css.map */
