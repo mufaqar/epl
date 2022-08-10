@@ -6,6 +6,11 @@
 get_header();
 $studio = get_field('our_studios');
 $workshops = get_field('our_workshops');
+
+$more_info_link = get_field('more_info_link');
+
+
+
 ?>
 
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -29,7 +34,10 @@ $workshops = get_field('our_workshops');
                     <div class="para">
                         <p><?php echo get_post_meta(get_the_ID(), 'short_instructions',  true); ?></p>
                         <div class="time-class">
-                        <button class="btn btn-buy"><a href="<?php the_field('more_info_link') ?>">MORE INFO</a></button>
+
+
+                        <?php if($more_info_link != '') { ?> <button class="btn btn-buy"><a href="<?php the_field('more_info_link') ?>">MORE INFO</a></button> <?php } ?>
+                       
                     </div>
                     </div>                    
                 </div>

@@ -471,9 +471,15 @@ div.faqscat:nth-child(3n) .graySec {
 }
 
 .extra_padding {
-  padding: 0 5%;
+  padding: 3% 5%;
   text-align: justify;
   max-width: 95%;
+}
+
+.extra_padding p {
+  color: #53565a;
+  font-family: 'Gotham Book', Sans-serif;
+  font-size: 15.15px;
 }
 
 .extra_padding ol {
