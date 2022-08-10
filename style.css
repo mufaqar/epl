@@ -1054,7 +1054,11 @@ ol li {
 .last_content ol {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+}
+
+.top-menu ol li {
+  list-style: none !important;
 }
 
 /* Woo Styles */

@@ -27,6 +27,8 @@ $count_white = 0;
 
 <?php get_template_part('template-parts/banner') ?>
 
+<section class="teacher_traing_inner">
+
 
 
 <?php if ($teacher_inner_page_video != '') { ?>
@@ -116,7 +118,7 @@ $count_white = 0;
   
   <?php } ?>
 
-
+  </section>
 
 
 
