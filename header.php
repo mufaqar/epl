@@ -76,7 +76,8 @@
             </div>
             <div class="col-md-4 mbl-none">
                 <div class="sign-up mbl-none">
-                <a href="<?php the_field('login__sign_up_link', 'option'); ?>" class="btn btn-primary"><?php the_field('login__sign_up', 'option'); ?></a>
+                <?php the_field('login__sign_up_link', 'option'); ?>             
+                
                 </div>
             </div>
         </div>

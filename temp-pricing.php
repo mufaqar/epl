@@ -105,7 +105,7 @@ get_header();
                                                                             <p><?php the_sub_field('item'); ?></p>                                 
                                                                         <?php endwhile;  endif; ?>
                                                                     </div>
-                                                                    <button class="btn btn-buy"><a href="<?php the_field('buy_now'); ?>">BUY NOW</a></button>
+                                                                    <button class="btn btn-buy"><?php the_field('buy_now'); ?></button>
                                                             </div>
                                                         </div>
                                                     
@@ -140,7 +140,7 @@ get_header();
                                                                                 <p><?php the_sub_field('item'); ?></p>                                 
                                                                             <?php endwhile;  endif; ?>
                                                                         </div>
-                                                                        <button class="btn btn-buy"><a href="<?php the_field('buy_now'); ?>">BUY NOW</a></button>
+                                                                        <button class="btn btn-buy"><?php the_field('buy_now'); ?></button>
                                                                 </div>
                                                             </div>
                                                             

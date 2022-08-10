@@ -1061,6 +1061,26 @@ ol li {
   list-style: none !important;
 }
 
+.sign-up a {
+  font-family: 'Gotham Book', Sans-serif !important;
+}
+
+.healcode-link {
+  font-size: 16px;
+  background-color: #00aec7;
+  border: 1px solid #00aec7;
+  padding: 10px 30px;
+  border-radius: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Gotham Book', Sans-serif !important;
+  font-weight: normal !important;
+}
+.healcode-link:hover {
+  background-color: #fff !important;
+  color: #00aec7 !important;
+}
+
 /* Woo Styles */
 
 .checkout-button {
