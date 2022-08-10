@@ -697,6 +697,7 @@ div.healcode {
   line-height: 34px;
   color: #53565a;
   font-family: 'Brandon Grotesque Black', Sans-serif;
+  min-height: 70px;
 }
 .epl_events .card-body p {
   font-style: normal;
@@ -1065,7 +1066,7 @@ ol li {
   font-family: 'Gotham Book', Sans-serif !important;
 }
 
-.healcode-link {
+.header .healcode-link {
   font-size: 16px;
   background-color: #00aec7;
   border: 1px solid #00aec7;
@@ -1076,7 +1077,7 @@ ol li {
   font-family: 'Gotham Book', Sans-serif !important;
   font-weight: normal !important;
 }
-.healcode-link:hover {
+.header .healcode-link:hover {
   background-color: #fff !important;
   color: #00aec7 !important;
 }
