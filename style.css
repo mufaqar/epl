@@ -1179,7 +1179,11 @@ header .loginbtn {
 }
 
 .extra_padding h1,
-.extra_padding h2 {
+.extra_padding h2,
+.extra_padding h3,
+.extra_padding h4,
+.extra_padding h5,
+.extra_padding h6 {
   color: #53565a;
   font-family: 'Brandon Grotesque Black', Sans-serif;
 }

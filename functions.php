@@ -187,3 +187,37 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
    add_theme_support( 'woocommerce' );
 }    
+
+
+
+add_filter( 'manage_events_posts_columns', 'set_custom_edit_faq_columns' );    
+add_action( 'manage_events_posts_custom_column' , 'custom_faq_column', 10, 2 );
+
+function set_custom_edit_faq_columns($columns) {    
+    unset( $columns['author'] );
+    $columns['is_useful'] = 'Event Date';
+  
+    return $columns;    
+}
+
+function custom_faq_column( $column, $post_id ) {   
+    global $post;
+    switch ( $column ) {
+        case 'is_useful' :
+            if(get_field( "date", $post_id )) {
+                echo get_field( "date", $post_id );
+            } else {
+                echo 0;
+            }
+        break;
+
+           
+    }   
+}
+
+function my_column_register_sortable( $columns ) {
+     $columns['is_useful'] = 'is_useful';
+    return $columns;
+}
+
+add_filter("manage_edit-faq_sortable_columns", "my_column_register_sortable" );
