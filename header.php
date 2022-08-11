@@ -46,7 +46,7 @@
     <header class="header headermain mt-0">
        <div class="container">
         <div class="row align-items-center padding py-0">
-            <div class="col-md-4 col-3">
+            <div class="col-md-4 hamburger col-3">
                <div class="d-flex align-items-center">
                 <nav class="navbar">
                     <button aria-label="Open Mobile Menu" class="open-mobile-menu">
@@ -69,12 +69,12 @@
                   </div>
                </div>
             </div>
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 _logo col-6">
                 <div class="logo">
                     <a href="<?php bloginfo('url'); ?>"><img  src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo"></a>
                 </div>
             </div>
-            <div class="col-md-4 mbl-none">
+            <div class="col-md-4 loginbtn mbl-none">
                 <div class="sign-up mbl-none">
                 <?php the_field('login__sign_up_link', 'option'); ?>             
                 
