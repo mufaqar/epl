@@ -42,9 +42,8 @@ get_header();
 
                                         <div class="col-md-4 mb-5 mr-2 ">
                                             <div class="card event ">
-
                                                 <?php if (has_post_thumbnail()) {
-                                                    the_post_thumbnail('event-thumbnail');
+                                                    the_post_thumbnail( 'full' ); 
                                                 } else { ?>
                                                     <a href="<?php the_permalink(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/img/inductions.jpg" alt="Featured Thumbnail" /></a>
                                                 <?php } ?>
@@ -59,8 +58,8 @@ get_header();
                                                     </div>
 
                                                     <div class="footer-btn">
-                                                        <a href="<?php the_permalink() ?>" class="btn btn_info">Info</a>
-                                                        <a href="<?php the_field('enroll_link'); ?>" class="btn"> Enrol</a>
+                                                        <a href="<?php the_permalink() ?>" class="btn btn_info"><?php the_field('info_text'); ?></a>
+                                                        <a href="<?php the_field('enroll_link'); ?>" class="btn"><?php the_field('enroll_text'); ?></a>
                                                     </div>
                                                 </div>
 

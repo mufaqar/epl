@@ -377,7 +377,6 @@ div.faqscat:nth-child(2n) .graySec {
 }
 
 div.faqscat:nth-child(3n) .graySec {
-  background-color: #00aec7 !important;
 }
 
 .fixed-footer {
@@ -957,7 +956,7 @@ div.healcode {
 }
 
 .pricing-section .pricing-cards .card-padding .card-1 .para {
-  max-width: 135px !important;
+  max-width: 100% !important;
   min-height: 135px;
 }
 .training-section .training-cards .card-padding .card-1 h2 {
@@ -1188,6 +1187,16 @@ header .loginbtn {
   font-family: 'Brandon Grotesque Black', Sans-serif;
 }
 
+.single_eventpage h1,
+.single_eventpage h2,
+.single_eventpage h3,
+.single_eventpage h4,
+.single_eventpage h5,
+.single_eventpage h6 {
+  color: #53565a;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
     padding: 0 !important;
@@ -1221,5 +1230,6 @@ header .loginbtn {
 @media screen and (min-width: 1040px) {
   .pricing-section .pricing-cards .card-padding .card-1 h3 {
     min-height: 62px;
+    font-family: 'Brandon Grotesque Black', Sans-serif;
   }
 }

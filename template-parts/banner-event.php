@@ -19,7 +19,7 @@
         <div><?php the_field('cost'); ?></div>
     </div>
     <div class="primary-btn">
-        <a href="<?php the_field('enroll_link'); ?>" class="btn-border btn-light"> Enrol</a>
+        <a href="<?php the_field('enroll_link'); ?>" class="btn-border btn-light"><?php the_field('enroll_text'); ?></a>
     </div>
 
 </div>

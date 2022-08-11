@@ -1,10 +1,8 @@
-<?php load_theme_textdomain('text_domain'); ?>
-<?php
+<?php load_theme_textdomain('epl_domain'); 
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 140, 140, true );
+	set_post_thumbnail_size( 300, 220, true );
 	add_image_size( 'single-post-thumbnail', 300, 9999 );
-
-	// Add RSS links to <head> section
+    add_image_size( 'event-thumbnail', 350, 9999 );
 	automatic_feed_links();
 	
 	// Clean up the <head>
