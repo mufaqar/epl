@@ -1166,11 +1166,22 @@ header .loginbtn {
 }
 
 .pricing-section .pricing-cards .card-padding .card-1 .btn-buy {
-  padding: 0 10px 10px 10px;
+  padding: 10px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+}
+
+.extra_padding h1,
+.extra_padding h2 {
+  color: #53565a;
+  font-family: 'Brandon Grotesque Black', Sans-serif;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {

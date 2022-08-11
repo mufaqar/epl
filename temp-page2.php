@@ -9,7 +9,7 @@ get_header();
 <?php get_template_part('template-parts/banner')?>
 
 	<div class="page-sections pt-5 pb-5 ">
-           <div class="container mx-5 px-5">           
+           <div class="container  px-5 mx-auto">           
                 <div class="row pagebody extra_padding">
 
 						<?php
