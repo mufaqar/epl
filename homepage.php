@@ -175,7 +175,7 @@ $more_info_link = get_field('more_info_link');
     <div class="container">
         <div class="padding">
             <div class="text-center">           
-            <a href="https://instagram.com/exhalepilateslondon" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta" > <h2>@exhalepilateslondon</h2></a>
+            <a href="https://instagram.com/exhalepilateslondon" target="_blank" class="hcolor"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta" > <h2>@exhalepilateslondon</h2></a>
                 
              </div>
         </div>

@@ -379,6 +379,10 @@ div.faqscat:nth-child(2n) .graySec {
 div.faqscat:nth-child(3n) .graySec {
 }
 
+.instagram-feed .container .padding .text-center a:hover h2 {
+  color: #00aec7;
+}
+
 .fixed-footer {
   position: fixed;
   bottom: 0px;
