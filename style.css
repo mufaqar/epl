@@ -967,6 +967,7 @@ div.healcode {
   min-height: 75px;
   font-family: 'Brandon Grotesque Black', Sans-serif;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .teacher_traning_child_content {
@@ -1117,9 +1118,11 @@ ol li {
 
 .page-template-teacher-traning-child ul li {
   list-style-type: circle !important;
+  font-family: 'Gotham Book', Sans-serif;
 }
 .page-template-teacher-traning-child ol li {
   list-style-type: upper-greek !important;
+  font-family: 'Gotham Book', Sans-serif;
 }
 
 .single_class ul li {
