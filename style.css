@@ -2,7 +2,7 @@
 Theme URI: http://mufaqar.com 
 Author URI: https://mufaqar.com
 Description: Description 
-Version: 1.3.1
+Version: 1.3.2
  Text Domain: epl-theme */
 
 @font-face {
@@ -747,7 +747,7 @@ div.healcode {
   font-family: 'Brandon Grotesque Black', Sans-serif;
 }
 .card-body {
-  padding: 1rem;
+  padding: 1rem 0.7rem;
 }
 
 .single_eventpage h2 {
