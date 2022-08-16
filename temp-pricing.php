@@ -25,7 +25,7 @@ get_header();
         <div class="container">
            <div class="filter">
             <div class="searchBoxMain">
-                 <form action="" method="GET">
+                 <form action="#top" method="GET">
                         <select name="pricing" id="pricing" onchange="this.form.submit()"> 
                         <option value="">ALL</option>                       
                         <?php   
@@ -43,7 +43,7 @@ get_header();
                  </form>
             </div>
            </div>
-           <div class="new-offer">
+           <div class="new-offer" id="top">
                
                    <h1><?php if($query == '') { //echo "All";
                    } 

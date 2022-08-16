@@ -205,7 +205,7 @@ a {
 }
 
 .clr p {
-  text-align: justify !important;
+  text-align: center;
 }
 
 .bw-widget--large .bw-session__basics .bw-widget__cart_button {
@@ -424,10 +424,13 @@ div.faqscat:nth-child(3n) .graySec {
   font-family: 'Gotham Book', Sans-serif;
   font-size: 15.15px;
 }
+.single_class ul {
+  margin: 0;
+  padding: 0;
+}
 
 .single_class ul li {
-  list-style: auto;
-  text-align: left;
+  text-align: center;
 }
 
 .arrow_btn {
@@ -1202,6 +1205,20 @@ header .loginbtn {
 .single_eventpage h6 {
   color: #53565a;
   font-family: 'Brandon Grotesque Black', Sans-serif;
+}
+
+.clr ul {
+  text-align: center;
+
+  list-style-position: inside !important;
+}
+
+.member-detail .member-width {
+  max-width: 500px;
+}
+
+.woocommerce h3 {
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
