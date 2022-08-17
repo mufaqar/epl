@@ -17,7 +17,7 @@ $more_info_link = get_field('more_info_link');
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-<?php get_template_part('template-parts/banner')?>
+<?php get_template_part('template-parts/videobanner')?>
 
 <div class="exhale-pilates">
     <div class="container">

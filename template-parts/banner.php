@@ -21,7 +21,7 @@ $banner_type = get_field('banner_type');
 	<section class="videosection">
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"  preload="none" poster="<?php echo $banner_image ?>">
-            <source src="<?php echo $video_url; ?>" type="video/mp4">
+            <source src="<?php echo $video_url; ?>" type="video/mp4" >
         </video>
 
         <!-- The header content -->
