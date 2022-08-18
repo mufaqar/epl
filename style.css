@@ -686,23 +686,19 @@ div.healcode {
 .single_eventpage a,
 .extra_padding a {
   text-decoration: underline;
-  color: #00aec7;
 }
 
 .clr a {
   text-decoration: underline;
-  color: #00aec7;
 }
 
 .clr a:hover {
-  font-weight: 700;
-  text-decoration: none;
+  color: #00aec7;
 }
 
 .single_eventpage a:hover,
 .extra_padding a:hover {
-  font-weight: 700;
-  text-decoration: none;
+  color: #00aec7;
 }
 
 .epl_events > div:nth-child(even) {
