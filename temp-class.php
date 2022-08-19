@@ -24,3 +24,21 @@ get_footer();
 
 ?>
 
+<script>
+
+$(document).ready(function(){
+		//console.log("document length - mb");
+		//console.log(document.getElementsByClassName('bw-header__filter-link').length);
+		const myInterval = setInterval(()=>{
+			if (document.getElementsByClassName('bw-header__filter-link').length > 1){
+				console.log("in if and clicking")
+				document.querySelector('.bw-header__filter-link').click();
+  clearInterval(myInterval);	
+			}
+		}, 5000)
+	});
+
+
+
+</script>
+
