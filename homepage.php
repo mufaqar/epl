@@ -70,7 +70,7 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 p1">
                 <div class="images">
                     <img src="<?php echo $studio['studio_image_1'] ?>" alt="primsore-hall">
                 </div>
@@ -81,20 +81,23 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
                     </p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 p2">
                 <div class="images">
                     <img src="<?php echo $studio['studio_image_2'] ?>" alt="north">
                 </div>
-                <div class="vist_btn">
+                <div class="vist_btn btnrightside">
                     <p>
                         <a href="<?php echo $studio['studio_ulr_2'] ?>"><?php echo $studio['studio_title_2'] ?></a>
+                        <span class="ml4"><i class="fa-solid fa-angle-right"></i></span>
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="our-studios">
+
+<!-- EXHALE EDUCATION -->
+<div class="our-studios pb-5">
     <div class="container">
         <div class="title">
             <div class="padding">
@@ -104,25 +107,34 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 p1">
                 <div class="images">
-                    <img src="<?php echo $workshops['workshops_image_1'] ?>" alt="trainer">
-                    <div class="heading">
-                        <p><a href="<?php echo $workshops['workshops_link_1'] ?>"><?php echo $workshops['workshops_title_1'] ?></a></p>
-                    </div>
+                    <img src="<?php echo $workshops['workshops_image_1'] ?>" alt="primsore-hall">
+                </div>
+                <div class="vist_btn">
+                    <p>
+                        <a href="<?php echo $workshops['workshops_ulr_1'] ?>"> <?php echo $workshops['workshops_title_1'] ?> </a>
+                        <span class="ml4"><i class="fa-solid fa-angle-right"></i></span>
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 p2">
                 <div class="images">
-                    <img src="<?php echo $workshops['workshops_image_2'] ?>" alt="workshops">
-                    <div class="heading">
-                        <p><a href="<?php echo $workshops['workshops_link_2'] ?>"><?php echo $workshops['workshops_title_2'] ?></a></p>
-                    </div>
+                    <img src="<?php echo $workshops['workshops_image_2'] ?>" alt="north">
+                </div>
+                <div class="vist_btn btnrightside">
+                    <p>
+                        <a href="<?php echo $workshops['workshops_ulr_2'] ?>"><?php echo $workshops['workshops_title_2'] ?></a>
+                        <span class="ml4"><i class="fa-solid fa-angle-right"></i></span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
 <div class="our-classes">
     <div class="container">
         <div class="padding">
@@ -151,13 +163,6 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
             if (have_posts()) :  while (have_posts()) : the_post();
 
                     $custom_link = get_field('custom_link');
-
-
-
-
-
-
-
             ?>
                     <div class="col-md-4">
                         <div class="padding">
@@ -184,7 +189,9 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
                                 </a>
                             </div>
 
+                            <div class="primary-btn"></div><a class="btn-border" href="<?php echo the_permalink(); ?>"><?php the_title() ?></a>
                         </div>
+                        
 
                     </div>
 

@@ -538,18 +538,6 @@ div.healcode {
   padding: 4% 0 0 0;
 }
 
-.primary-btn .btn-border {
-  font-family: 'Gilory Light', Sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  background-color: #00aec7;
-  border: 1px solid #00aec7;
-  padding: 10px 30px;
-  border-radius: 0px;
-  color: #fff;
-  text-align: center;
-}
 
 .primary-btn .btn-light {
   border: 1px solid #fff;
@@ -559,11 +547,6 @@ div.healcode {
   border: 1px solid #00aec7 !important;
 }
 
-.primary-btn .btn-border:hover {
-  background-color: #fff;
-  color: #00aec7;
-  border: 1px solid #fff;
-}
 
 .exhale-pilates .time-class .btn-buy:hover {
   background-color: #fff;
@@ -1303,7 +1286,7 @@ header .loginbtn {
 }
 @font-face {
   font-family: trade;
-  src: url(./assets/fonts/Trade_Gothic_LT_Light.woff);
+  src: url(./assets/fonts/TradeGothic-Light-Light.ttf);
 }
 :root {
   --darkblue: #00354C;
@@ -1363,7 +1346,7 @@ header .loginbtn {
 .exhale-pilates .welcome-text h1 {
   max-width: 410px;
   color: var(--white);
-  font-family: var(--font_Knockout);
+  font-family: var(--font_Knockout), sans-serif;
   font-size: 66px;
   font-weight: 500;
 }
@@ -1377,7 +1360,7 @@ header .loginbtn {
 }
 .our-studios .title h2 {
   color: var(--darkblue);
-  font-family: var(--font_Knockout);
+  font-family: var(--font_Knockout), sans-serif;
   font-size: 37px;
   font-weight: 500;
   margin: 0px;
@@ -1398,7 +1381,7 @@ header .loginbtn {
   padding: .5rem 1.4rem;
   border: 1px solid var(--darkblue);
   color: var(--darkblue);
-  font-family: var(--font_Trade);
+  font-family: var(--font_Trade), sans-serif;
   size: 15px;
   display: inline-block;
 }
@@ -1411,4 +1394,63 @@ header .loginbtn {
 }
 .vist_btn:hover .ml4{
   margin-left: .6rem;
+}
+.p1{
+  padding-right: 2rem;
+}
+.p2{
+  padding-left: 2rem;
+}
+.btnrightside{
+  float: right;
+}
+.our-classes .title h1 {
+  color: #111;
+  font-family: var(--font_Knockout), sans-serif !important;
+  font-size: 37px;
+  padding: 4% 0% 0% 0%;
+  margin-bottom: 20px;
+}
+.our-classes .title P {
+  max-width: 635px;
+  margin: 0 auto;
+  text-align: center;
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15.15px;
+  font-weight: 300;
+}
+.primary-btn .btn-border {
+  font-family: var(--font_Trade), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--darkblue);
+  padding: 10px 30px;
+  border-radius: 0px;
+  color: var(--darkblue);
+  text-align: center;
+  border-radius: 6px;
+}
+
+.primary-btn .btn-border:hover {
+  background-color: var(--darkblue);
+  color: var(--white);
+  border: 1px solid transparent;
+}
+
+.our-classes .padding .hover-img img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.9;
+  filter: brightness(0.7);
+  margin-bottom: 8px;
+  border-radius: 13px;
+}
+.our-classes .padding .hover-img .content {
+  display: none;
+  border-radius: 13px;
 }

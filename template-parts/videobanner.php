@@ -11,7 +11,7 @@ $banner_type = get_field('banner_type');
 
 
 
-	<section class="video_wrapper">
+	<section class="video_wrapper ">
 		<div class="video_section">
 			<div class="overlay"></div>
 			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"  preload="none" poster="<?php echo $banner_image ?>">
@@ -24,9 +24,10 @@ $banner_type = get_field('banner_type');
 	<style>
 		.video_wrapper{
 			position: relative;
+			margin-top: -7rem;
 		}
 		.video_section{
-			height: 70vh;
+			height: calc(100vh - 5.2rem);
             width: 100%;
 		}
 		.video_section video{
