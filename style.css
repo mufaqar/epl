@@ -2,7 +2,7 @@
 Theme URI: http://mufaqar.com 
 Author URI: https://mufaqar.com
 Description: Description 
-Version: 1.3.2
+Version: 2.0.1
  Text Domain: epl-theme */
 
 @font-face {
@@ -383,12 +383,12 @@ div.faqscat:nth-child(3n) .graySec {
   color: #00aec7;
 }
 
-.fixed-footer {
+/* .fixed-footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
   z-index: 9999;
-}
+} */
 
 .our-classes .padding {
   padding: 15px;
@@ -1247,6 +1247,13 @@ header .loginbtn {
   color: #00aec7;
 }
 
+
+
+
+
+
+
+
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
   .event-section .row .col-md-4 {
     padding: 0 !important;
@@ -1282,4 +1289,126 @@ header .loginbtn {
     min-height: 62px;
     font-family: 'Brandon Grotesque Black', Sans-serif;
   }
+}
+
+
+
+/* New Style  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
+@font-face {
+  font-family: knockout;
+  src: url(./assets/fonts/Knockout_HTF33-JuniorHeviwt_Regular.woff);
+}
+@font-face {
+  font-family: trade;
+  src: url(./assets/fonts/Trade_Gothic_LT_Light.woff);
+}
+:root {
+  --darkblue: #00354C;
+  --white: #ffffff;
+  --gray: #F3F2EF;
+  --font_Knockout : knockout;
+  --font_Trade : trade;
+}
+
+.px-5{
+  margin-left: 2%;
+  margin-right: 2%
+}
+.ml-55{
+  margin-left: 55px;
+}
+.mr-55{
+  margin-right: 55px;
+}
+.login_btn{
+  background: var(--white) !important;
+  color: var(--darkblue) !important;
+}
+.header{
+  background: transparent !important;
+}
+.class-instructor{
+  background: var(--gray);
+}
+.class{
+  border-right: 1px solid var(--darkblue);
+}
+.class, .instructor{
+  padding: 2rem;
+}
+.class-instructor .class a, .class-instructor .instructor a {
+  font-family: trade;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  fill: var(--white);
+  color: var(--darkblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.class-instructor .class a:hover, .class-instructor .instructor a:hover {
+  text-decoration: underline;
+} 
+.exhale-pilates {
+  background-color: var(--darkblue);
+  padding: 6% 0% 6% 0%;
+}
+.exhale-pilates .welcome-text h1 {
+  max-width: 410px;
+  color: var(--white);
+  font-family: var(--font_Knockout);
+  font-size: 66px;
+  font-weight: 500;
+}
+.exhale-pilates P {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15.15px;
+  font-weight: 200;
+  text-align: justify;
+ margin-bottom: 0;
+}
+.our-studios .title h2 {
+  color: var(--darkblue);
+  font-family: var(--font_Knockout);
+  font-size: 37px;
+  font-weight: 500;
+  margin: 0px;
+}
+.our-studios .images {
+  position: relative;
+}
+.our-studios .images img {
+  height: 310px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 13px;
+}
+.vist_btn{
+  margin-top: 1.8rem;
+  border-radius: 6px;
+  padding: .5rem 1.4rem;
+  border: 1px solid var(--darkblue);
+  color: var(--darkblue);
+  font-family: var(--font_Trade);
+  size: 15px;
+  display: inline-block;
+}
+.vist_btn p{
+  margin-bottom: 0;
+}
+.ml4{
+  margin-left: .3rem;
+  transition: .3s ease-in-out;
+}
+.vist_btn:hover .ml4{
+  margin-left: .6rem;
 }
