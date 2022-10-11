@@ -276,17 +276,8 @@ button {
   text-align: center;
 }
 
-.exhale-pilates {
-  background-color: #00AEC7;
-  padding: 6% 0% 6% 0%;
-}
-.exhale-pilates .welcome-text h1 {
-  max-width: 410px;
-  color: #FFFFFF;
-  font-family: "Brandon Grotesque Black", Sans-serif;
-  font-size: 66px;
-  font-weight: 600;
-}
+
+
 @media screen and (max-width: 1024px) {
   .exhale-pilates .welcome-text h1 {
     font-size: 45px;
@@ -309,14 +300,7 @@ button {
     max-width: 100%;
   }
 }
-.exhale-pilates .para P {
-  color: #53565A;
-  font-family: "Gotham Book", Sans-serif;
-  font-size: 15.15px;
-  font-weight: 400;
-  text-align: justify;
- 
-}
+
 @media screen and (max-width: 1024px) {
   .exhale-pilates .para P {
     font-size: 16px;
@@ -373,28 +357,14 @@ button {
 .our-studios .title {
   padding: 4% 0% 2% 0%;
 }
-.our-studios .title h2 {
-  color: #53565A;
-  font-family: "Brandon Grotesque Black", Sans-serif;
-  font-size: 37px;
-  font-weight: 600;
-  margin: 0px;
-}
+
 @media screen and (max-width: 1024px) {
   .our-studios .title h2 {
     font-size: 28px;
   }
 }
-.our-studios .images {
-  padding: 15px;
-  position: relative;
-}
-.our-studios .images img {
-  height: 310px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+
+
 .our-studios .images .heading {
   position: absolute;
   z-index: 9;
@@ -566,71 +536,27 @@ button {
     display: block;
   }
 }
-.class-instructor .class {
-  width: 50%;
-  background-color: #00aec7;
-  text-align: center;
-  padding: 15px;
-}
+
 @media screen and (max-width: 630px) {
   .class-instructor .class {
     width: 100%;
     padding: 5px;
   }
 }
-.class-instructor .class a {
-  font-family: "Gotham Book", Sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  fill: #FFFFFF;
-  color: #FFFFFF;
-  background-color: rgba(97, 206, 112, 0);
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  padding: 3% 3% 3% 3%;
-  width: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin: 0 auto;
-}
+
 @media screen and (max-width: 1024px) {
   .class-instructor .class a {
     width: 270px;
   }
 }
-.class-instructor .instructor {
-  width: 50%;
-  background-color: #66cbd9;
-  text-align: center;
-  padding: 15px;
-}
+
 @media screen and (max-width: 630px) {
   .class-instructor .instructor {
     width: 100%;
     padding: 5px;
   }
 }
-.class-instructor .instructor a {
-  font-family: "Gotham Book", Sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  fill: #FFFFFF;
-  color: #FFFFFF;
-  background-color: rgba(97, 206, 112, 0);
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  cursor: pointer;
-  padding: 3% 3% 3% 3%;
-  width: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
+
 @media screen and (max-width: 1024px) {
   .class-instructor .instructor a {
     width: 270px;
@@ -1869,4 +1795,4 @@ button {
   color: #53565A;
   margin-right: 20px;
   font-family: "Gotham Book", Sans-serif;
-}/*# sourceMappingURL=style.css.map */
+}
