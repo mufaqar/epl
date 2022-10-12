@@ -550,9 +550,7 @@ button {
         margin: 0 auto;
     }
    }
-    .slick-prev:before, .slick-next:before {
-        color: #00aec7 !important;
-    }
+
 }
 .class-instructor{
     display: flex;
@@ -1779,49 +1777,7 @@ button {
                 }
             }
         }
-        .content-1{
-            margin-top: 30px;
-            p{
-                color: #53565A;
-                font-family: "Gotham Book", Sans-serif;
-                font-size: 12px;
-                letter-spacing: 0px;
-                margin: 0;
-                line-height: 10px;
-            }
-            a{
-                color: #00AEC7;
-                font-family: "Gotham Book", Sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-            }
-        }
-        .content-2{
-            margin-top: 20px;
-            p{
-                color: #53565A;
-                font-family: "Gotham Book", Sans-serif;
-                font-size: 12px;
-                letter-spacing: 0px;
-                margin: 0;
-                line-height: 10px;
-            }
-            a{
-                color: #00AEC7;
-                font-family: "Gotham Book", Sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-            }
-        }
-        .content-3{
-            margin-top: 20px;
-            a{
-                color: #53565a;
-                font-family: "SF-Pro", Sans-serif;
-                font-size: 13px;
-                font-weight: 500;
-            }
-        }
+        
         .content-4{
             margin-top: 30px;
             a{

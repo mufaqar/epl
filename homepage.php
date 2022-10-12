@@ -133,8 +133,6 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
     </div>
 </div>
 
-
-
 <div class="our-classes">
     <div class="container">
         <div class="padding">
@@ -173,11 +171,6 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
                                 } else { ?>
                                     <img src="<?php bloginfo('template_directory'); ?>/assets/img/inductions.jpg" alt="Featured Thumbnail" />
                                 <?php } ?>
-                                <h5> <a href="<?php if ($custom_link == '') {
-                                                    the_permalink();
-                                                } else {
-                                                    echo $custom_link;
-                                                } ?>"><?php the_title() ?></a></h5>
                                 <a href="<?php if ($custom_link == '') {
                                                 the_permalink();
                                             } else {
@@ -189,9 +182,9 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
                                 </a>
                             </div>
 
-                            <div class="primary-btn"></div><a class="btn-border" href="<?php echo the_permalink(); ?>"><?php the_title() ?></a>
+                            <div class="primary-btn mb4"><a class="btn-border" href="<?php echo the_permalink(); ?>"><?php the_title() ?></a></div>
                         </div>
-                        
+
 
                     </div>
 
@@ -205,12 +198,13 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
     </div>
 </div>
 
+<!-- insta  -->
 <div class="instagram-feed">
     <div class="container">
         <div class="padding">
             <div class="text-center">
-                <a href="https://instagram.com/exhalepilateslondon" target="_blank" class="hcolor"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/insta.png" alt="insta">
-                    <h2>@exhalepilateslondon</h2>
+                <a href="https://instagram.com/exhalepilateslondon" target="_blank" class="hcolor">
+                    <h2>@exhalepilates</h2>
                 </a>
 
             </div>
@@ -219,71 +213,72 @@ $become_an_instructor_link = get_field('become_an_instructor_link', 'option');
             <?php echo do_shortcode('[instagram-feed feed=3]') ?>
         </div>
     </div>
+</div>
 
+<!-- client logos  -->
+<div class="recommended-by">
+    <div class="">
+        <div class="padding">
+            <div class="text-center">
+                <h2><?php the_field('recommended_by_title'); ?></h2>
+                <div class="padding">
+                    <div class="slider">
 
+                        <?php query_posts(array(
+                            'post_type' => 'client',
+                            'posts_per_page' => -1,
+                            'order' => 'desc'
+                        ));
+                        if (have_posts()) :  while (have_posts()) : the_post();
+                                $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'full'); ?>
 
+                                <div class="col-md-4 ">
+                                    <a href="<?php the_field('client_link'); ?>" style="cursor: pointer;"><img src="<?php echo $url ?>" alt="traainer"></a>
+                                </div>
 
-
-
-
-    <div class="recommended-by">
-        <div class="container">
-            <div class="padding">
-                <div class="text-center">
-                    <h2><?php the_field('recommended_by_title'); ?></h2>
-                    <div class="padding">
-                        <div class="slider">
-
-                            <?php query_posts(array(
-                                'post_type' => 'client',
-                                'posts_per_page' => -1,
-                                'order' => 'desc'
-                            ));
-                            if (have_posts()) :  while (have_posts()) : the_post();
-                                    $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'full'); ?>
-
-                                    <div class="col-md-4 ">
-                                        <a href="<?php the_field('client_link'); ?>" style="cursor: pointer;"><img src="<?php echo $url ?>" alt="traainer"></a>
-                                    </div>
-
-                                <?php endwhile;
-                                wp_reset_query();
-                            else : ?>
-                                <h2><?php _e('Nothing Found', 'lbt_translate');
-                                    ?></h2>
-                            <?php endif; ?>
-                        </div>
+                            <?php endwhile;
+                            wp_reset_query();
+                        else : ?>
+                            <h2><?php _e('Nothing Found', 'lbt_translate');
+                                ?></h2>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 
 
 
 
-    <?php
-
-    get_footer();  ?>
 
 
 
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $('.slider').slick({
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                speed: 3000,
-            });
+<?php
+
+get_footer();  ?>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 3000,
         });
-    </script>
+    });
+</script>

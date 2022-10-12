@@ -499,9 +499,6 @@ button {
   max-height: 250px;
   margin: 0 auto;
 }
-.recommended-by .slick-prev:before, .recommended-by .slick-next:before {
-  color: #00aec7 !important;
-}
 
 .class-instructor {
   display: flex;
@@ -1696,17 +1693,7 @@ button {
   cursor: pointer;
 }
 
-.footer-banner {
-  background-image: url(../img/footer_bg.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1% 0% 1% 0%;
-}
+
 .footer-banner .footer-content {
   text-align: left;
 }
